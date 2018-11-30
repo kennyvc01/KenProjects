@@ -47,49 +47,122 @@ namespace CcsEnityFramework
                 return bytes;
             }
         }
-        public static void createDipFile(CcsServerEntities ctx, JArray mappingIndex)
+        public static void createDipFile(CcsServerEntities ctx, JObject mappingJsonConfig, int snapShotId)
         {
-            //Loop through Doc Type Mapping and add to a list of the mappings object
-            List < Mappings > dtmList = new List<Mappings>();
-            foreach(doc_type_mapping dMap in ctx.doc_type_mapping)
+            //Get docs from the database
+            var docs = ctx.documents
+                .Where(d => d.snapshot_id == snapShotId);
+
+            //Initialize list for mappings
+            List<Mappings> mappingList = getMappingList(ctx);
+            //Get mappings from database
+            var mappings = ctx.doc_type_mapping;
+
+
+            //Parse the mappings.json file
+            JArray mappingIndex = (JArray)mappingJsonConfig["LookupAssignments"];
+            string conversionIdProperty = (string)mappingJsonConfig["CcsOnBaseDocumentIdKeyTypeName"];
+            string legacyIdProperty = (string)mappingJsonConfig["LegacyDocumentIdKeyTypeName"];
+            JObject staticKeywords = (JObject)mappingJsonConfig["StaticKeywords"];
+
+
+            //Initialize a new list for the dipfile entries
+            List<string> dipFileList = new List<string>();
+
+            //Loop through the docs and add to dipFileList as it goes
+            foreach (document doc in docs)
             {
-                dtmList.Add(new Mappings { onbaseDocType = dMap.onbase_doc_type.name, lookUp0 = dMap.lookup_000, lookUp1 = dMap.lookup_001, lookUp2 = dMap.lookup_002, lookUp3 = dMap.lookup_003, lookUp4 = dMap.lookup_004 });
-            }
-            
-        }
-        private static doc_type_mapping findMapping(document doc, JArray mappingIndex)
-        {
-            var mappingCol = "col_" + mappingIndex[0].ToString().PadLeft(3, '0');
-            var mappingValue = doc.metadata.GetType().GetProperty(mappingCol).GetValue(doc.metadata, null);
 
-            CcsServerEntities ctx = new CcsServerEntities();
-            var dtm = ctx.doc_type_mapping
-                .Where(d => d.lookup_000 == mappingValue.ToString())
-                .FirstOrDefault();
-
-            //loop through keytype mapset and pull out the non null values
-            foreach (var prop in dtm.key_type_mapset.GetType().GetProperties())
-            {
-                var property = prop.Name;
-                var value =  prop.GetValue(dtm.key_type_mapset, null);
-
-                if(value != null && property.ToString().Length > 3 && property.ToString().Substring(0,4) == "col_")
+                if (doc.exception_code == null && doc.exclusion_code == null)
                 {
-                    
+                    //Get the legacy doc type value from metadata
+                    var mappingCol = "col_" + mappingIndex[0].ToString().PadLeft(3, '0');
+                    var legacyDocType = doc.metadata.GetType().GetProperty(mappingCol).GetValue(doc.metadata, null);
+
+                    //lookup the mapping for the individual doc
+                    var mapping = mappingList
+                        .Where(m => m.lookUp0 == legacyDocType.ToString())
+                        .FirstOrDefault();
+
+
+                    //Add the appropriate values to the DIP file
+                    var onBaseDocType = mapping.onbaseDocType;
+
+                    dipFileList.Add(">>BEGIN:");
+                    dipFileList.Add(">>DocTypeName: " + onBaseDocType);
+                    dipFileList.Add(">>DocDate: " + "Needs to be added");
+                    dipFileList.Add(String.Format("{0}: {1}", conversionIdProperty, doc.id));
+                    dipFileList.Add(String.Format("{0}: {1}", legacyIdProperty, doc.legacy_id));
+                    dipFileList.Add("Legacy Document Type: " + legacyDocType);
+
+                    foreach (var item in staticKeywords)
+                    {
+                        dipFileList.Add(String.Format("{0}: {1}", item.Key, item.Value));
+                    }
+
+                    foreach (var map in mapping.keyTypeMapset)
+                    {
+                        var value = doc.metadata.GetType().GetProperty(map.metadataColIndex).GetValue(doc.metadata, null);
+                        dipFileList.Add(String.Format("{0}: {1}", map.onBaseKeywordName, value));
+                    }
+
+                    foreach (var file in doc.files.OrderBy(f => f.seq))
+                    {
+                        dipFileList.Add(">>FileTypeNum: " + file.file_type.hsi_filetypenum);
+                        dipFileList.Add(">>FullPath: " + file.relative_path);
+                    }
+                }
+            }
+            TextWriter tw = new StreamWriter(@"C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\dip_01.txt");
+            foreach(string s in dipFileList)
+            {
+                tw.WriteLine(s);
+            }
+            tw.Close();
+        }
+        private static List<Mappings> getMappingList(CcsServerEntities ctx)
+        {
+            //Loop through OnBase Key Types and add to a list of the OnBaseKeyType object
+            List<OnBaseKeyType> oktList = new List<OnBaseKeyType>();
+            foreach (onbase_key_type okt in ctx.onbase_key_type)
+            {
+                oktList.Add(new OnBaseKeyType { onbaseKeyTypeId = okt.id, onbaseKeyTypeName = okt.name });
+            }
+
+            List<Mappings> maps = new List<Mappings>();
+            //Loop through Doc Type Mapping and add to the object
+            foreach (doc_type_mapping dMap in ctx.doc_type_mapping)
+            {
+                var ktmList = getKeyTypeMapset(dMap.key_type_mapset, oktList);
+                maps.Add(new Mappings { onbaseDocType = dMap.onbase_doc_type.name.ToString(), keyTypeMapset = ktmList, lookUp0 = dMap.lookup_000.ToString() });
+            }
+            return maps;
+
+        }
+        private static List<KeyTypeMapsets> getKeyTypeMapset(key_type_mapset ktm, List<OnBaseKeyType> onbaseKeyTypes)
+        {
+            List < KeyTypeMapsets > ktmList = new List<KeyTypeMapsets>();
+            //loop through keytype mapset and pull out the non null values
+            foreach (var prop in ktm.GetType().GetProperties())
+            {
+                var value = prop.GetValue(ktm, null);
+                var property = prop.Name;
+
+                if(value != null && property.ToString().Length > 3 && property.ToString().Substring(0, 4) == "col_")
+                {
                     var keytypeId = value.ToString();
                     //Look for the OnBase keyword name
-                    
-                    var onbaseKeyType = ctx.onbase_key_type
-                        .Where(o => o.id.ToString() == keytypeId)
+                    var onbaseKeyType = onbaseKeyTypes
+                        .Where(o => o.onbaseKeyTypeId.ToString() == keytypeId)
                         .FirstOrDefault();
-                    
-                    //Debug.WriteLine("{0} = {1}", prop.Name, onbaseKeyType.name);
-                }
-                    
-            }
-            
 
-            return dtm;
+                    //Add non-nulls to the KeyTypeMapset list and return
+                    ktmList.Add(new KeyTypeMapsets { keyTypeMapsetId = ktm.id, metadataColIndex = property, onBaseKeyTypeId = onbaseKeyType.onbaseKeyTypeId, onBaseKeywordName = onbaseKeyType.onbaseKeyTypeName });
+
+                    //Debug.WriteLine("{0} = {1}", prop.Name, onbaseKeyType.onbaseKeyTypeName);
+                }
+            }
+            return ktmList;
         }
     }
 }

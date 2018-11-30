@@ -38,5 +38,11 @@ namespace CcsEnityFramework
             get;
             set;
         }
+        private List<KeyTypeMapsets> ktm = new List<KeyTypeMapsets>();
+        public List<KeyTypeMapsets> keyTypeMapset
+        {
+            get { return ktm; }
+            set { ktm = value; }
+        }
     }
 }

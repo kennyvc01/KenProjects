@@ -11,7 +11,7 @@ namespace CcsEnityFramework
     {
         public static void updateName(document doc)
         {
-            doc.metadata.col_000 = "Kenny";
+            doc.metadata.col_000 = "Churchill";
         }
         public static void updateFilePath(document doc)
         {

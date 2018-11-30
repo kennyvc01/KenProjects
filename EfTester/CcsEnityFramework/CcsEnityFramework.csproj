@@ -106,6 +106,7 @@
     <Compile Include="file_type.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="KeyTypeMapsets.cs" />
     <Compile Include="key_type_mapset.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>
@@ -122,6 +123,7 @@
     <Compile Include="note.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="OnBaseKeyType.cs" />
     <Compile Include="onbase_document.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>

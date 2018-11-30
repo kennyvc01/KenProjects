@@ -21,15 +21,13 @@ namespace CcsEnityFramework
 
             return sId.id;
         }
-        public static JArray getMappingIndex()
+        public static JObject getMappingIndex()
         {
 
             //grab mapping column from dip.json
-            JObject o1 = JObject.Parse(File.ReadAllText(@"C:\Users\kenny\Documents\Developer\ccs-2.3.305\CcsServer\cfg\projects\1\mappings.json"));
+            JObject o1 = JObject.Parse(File.ReadAllText(@"C:\Users\kchurchill\Documents\CCS\CcsServer\cfg\projects\1\mappings.json"));
 
-            JArray mappingIndex = (JArray)o1["LookupAssignments"];
-
-            return mappingIndex;
+            return o1;
         }
 
         public static void processSnapshot(int snapshotId)
@@ -66,18 +64,10 @@ namespace CcsEnityFramework
             Debug.WriteLine("Creating DIP for for snapshot id: " + snapshotId);
 
             var mappingIndex = getMappingIndex();
-            CcsFunctions.createDipFile(ctx, mappingIndex);
+            CcsFunctions.createDipFile(ctx, mappingIndex, snapshotId);
 
             Debug.WriteLine("Done creating DIP file");
-            //Check the results
-            foreach (var doc in docs)
-            {
-                var f = doc.files
-                    .FirstOrDefault();
 
-                //Debug.WriteLine(f.sb_file_type);
-                //Debug.WriteLine(f.file_type_id);
-            }
         }
     }
 }
