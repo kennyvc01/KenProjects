@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="72ead5c4041c4797b88e783270b0e42d" Name="Diagram1">
+        <EntityTypeShape EntityType="CcsServerModel.dataset" Width="1.5" PointX="6" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.dataset_field" Width="1.5" PointX="8.25" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.dataset_mapset" Width="1.5" PointX="19" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.dataset_record" Width="1.5" PointX="8.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.dip_batch" Width="1.5" PointX="0.75" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.diskgroup" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.doc_type_mapping" Width="1.5" PointX="16" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.document" Width="1.5" PointX="3" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.field" Width="1.5" PointX="2.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.file" Width="1.5" PointX="5.25" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.file_type" Width="1.5" PointX="3" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.key_type_mapset" Width="1.5" PointX="13.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.legacy_file_info" Width="1.5" PointX="7.5" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.max_num_keys" Width="1.5" PointX="2.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.metadata" Width="1.5" PointX="11.25" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.note" Width="1.5" PointX="5.25" PointY="81.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.onbase_doc_type" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.onbase_document" Width="1.5" PointX="5.25" PointY="86.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.onbase_file_info" Width="1.5" PointX="7.5" PointY="71.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.onbase_key_type" Width="1.5" PointX="4.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.onbase_note" Width="1.5" PointX="7.5" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CcsServerModel.snapshot" Width="1.5" PointX="0.75" PointY="51.375" IsExpanded="true" />
+        <AssociationConnector Association="CcsServerModel.FK_dataset_field_dataset_dataset_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_dataset_mapset_dataset_dataset_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_dataset_record_dataset_dataset_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_dataset_mapset_key_type_mapset_key_type_mapset_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_dataset_record_document_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_document_dip_batch_dip_batch_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_doc_type_mapping_key_type_mapset_key_type_mapset_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_document_snapshot_snapshot_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_file_document_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_metadata_document_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_note_document_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_onbase_document_document_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_file_file_type_file_type_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_file_snapshot_snapshot_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_legacy_file_info_file_file_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_onbase_file_info_file_file_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_metadata_snapshot_snapshot_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_onbase_file_info_onbase_document_onbase_doc_id" ManuallyRouted="false" />
+        <AssociationConnector Association="CcsServerModel.FK_onbase_note_onbase_document_onbase_doc_id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,13 @@
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.dll.config
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.pdb
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.xml
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.csprojResolveAssemblyReference.cache
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.pdb
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\SbdNetAnn.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.dll
+c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.Office.dll

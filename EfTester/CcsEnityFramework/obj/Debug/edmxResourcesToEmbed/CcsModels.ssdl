@@ -1,0 +1,1366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CcsServerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="dataset">
+    <Key>
+      <PropertyRef Name="dataset_id" />
+    </Key>
+    <Property Name="dataset_id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dataset_field">
+    <Key>
+      <PropertyRef Name="dataset_field_id" />
+    </Key>
+    <Property Name="dataset_field_id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="position" Type="smallint" Nullable="false" />
+    <Property Name="dataset_id" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dataset_mapset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="key_type_mapset_id" Type="smallint" />
+    <Property Name="dataset_id" Type="smallint" Nullable="false" />
+    <Property Name="col_000" Type="smallint" />
+    <Property Name="col_001" Type="smallint" />
+    <Property Name="col_002" Type="smallint" />
+    <Property Name="col_003" Type="smallint" />
+    <Property Name="col_004" Type="smallint" />
+    <Property Name="col_005" Type="smallint" />
+    <Property Name="col_006" Type="smallint" />
+    <Property Name="col_007" Type="smallint" />
+    <Property Name="col_008" Type="smallint" />
+    <Property Name="col_009" Type="smallint" />
+    <Property Name="col_010" Type="smallint" />
+    <Property Name="col_011" Type="smallint" />
+    <Property Name="col_012" Type="smallint" />
+    <Property Name="col_013" Type="smallint" />
+    <Property Name="col_014" Type="smallint" />
+    <Property Name="col_015" Type="smallint" />
+    <Property Name="col_016" Type="smallint" />
+    <Property Name="col_017" Type="smallint" />
+    <Property Name="col_018" Type="smallint" />
+    <Property Name="col_019" Type="smallint" />
+    <Property Name="col_020" Type="smallint" />
+    <Property Name="col_021" Type="smallint" />
+    <Property Name="col_022" Type="smallint" />
+    <Property Name="col_023" Type="smallint" />
+    <Property Name="col_024" Type="smallint" />
+    <Property Name="col_025" Type="smallint" />
+    <Property Name="col_026" Type="smallint" />
+    <Property Name="col_027" Type="smallint" />
+    <Property Name="col_028" Type="smallint" />
+    <Property Name="col_029" Type="smallint" />
+    <Property Name="col_030" Type="smallint" />
+    <Property Name="col_031" Type="smallint" />
+    <Property Name="col_032" Type="smallint" />
+    <Property Name="col_033" Type="smallint" />
+    <Property Name="col_034" Type="smallint" />
+    <Property Name="col_035" Type="smallint" />
+    <Property Name="col_036" Type="smallint" />
+    <Property Name="col_037" Type="smallint" />
+    <Property Name="col_038" Type="smallint" />
+    <Property Name="col_039" Type="smallint" />
+    <Property Name="col_040" Type="smallint" />
+    <Property Name="col_041" Type="smallint" />
+    <Property Name="col_042" Type="smallint" />
+    <Property Name="col_043" Type="smallint" />
+    <Property Name="col_044" Type="smallint" />
+    <Property Name="col_045" Type="smallint" />
+    <Property Name="col_046" Type="smallint" />
+    <Property Name="col_047" Type="smallint" />
+    <Property Name="col_048" Type="smallint" />
+    <Property Name="col_049" Type="smallint" />
+    <Property Name="col_050" Type="smallint" />
+    <Property Name="col_051" Type="smallint" />
+    <Property Name="col_052" Type="smallint" />
+    <Property Name="col_053" Type="smallint" />
+    <Property Name="col_054" Type="smallint" />
+    <Property Name="col_055" Type="smallint" />
+    <Property Name="col_056" Type="smallint" />
+    <Property Name="col_057" Type="smallint" />
+    <Property Name="col_058" Type="smallint" />
+    <Property Name="col_059" Type="smallint" />
+    <Property Name="col_060" Type="smallint" />
+    <Property Name="col_061" Type="smallint" />
+    <Property Name="col_062" Type="smallint" />
+    <Property Name="col_063" Type="smallint" />
+    <Property Name="col_064" Type="smallint" />
+    <Property Name="col_065" Type="smallint" />
+    <Property Name="col_066" Type="smallint" />
+    <Property Name="col_067" Type="smallint" />
+    <Property Name="col_068" Type="smallint" />
+    <Property Name="col_069" Type="smallint" />
+    <Property Name="col_070" Type="smallint" />
+    <Property Name="col_071" Type="smallint" />
+    <Property Name="col_072" Type="smallint" />
+    <Property Name="col_073" Type="smallint" />
+    <Property Name="col_074" Type="smallint" />
+    <Property Name="col_075" Type="smallint" />
+    <Property Name="col_076" Type="smallint" />
+    <Property Name="col_077" Type="smallint" />
+    <Property Name="col_078" Type="smallint" />
+    <Property Name="col_079" Type="smallint" />
+    <Property Name="col_080" Type="smallint" />
+    <Property Name="col_081" Type="smallint" />
+    <Property Name="col_082" Type="smallint" />
+    <Property Name="col_083" Type="smallint" />
+    <Property Name="col_084" Type="smallint" />
+    <Property Name="col_085" Type="smallint" />
+    <Property Name="col_086" Type="smallint" />
+    <Property Name="col_087" Type="smallint" />
+    <Property Name="col_088" Type="smallint" />
+    <Property Name="col_089" Type="smallint" />
+    <Property Name="col_090" Type="smallint" />
+    <Property Name="col_091" Type="smallint" />
+    <Property Name="col_092" Type="smallint" />
+    <Property Name="col_093" Type="smallint" />
+    <Property Name="col_094" Type="smallint" />
+    <Property Name="col_095" Type="smallint" />
+    <Property Name="col_096" Type="smallint" />
+    <Property Name="col_097" Type="smallint" />
+    <Property Name="col_098" Type="smallint" />
+    <Property Name="col_099" Type="smallint" />
+    <Property Name="col_100" Type="smallint" />
+    <Property Name="col_101" Type="smallint" />
+    <Property Name="col_102" Type="smallint" />
+    <Property Name="col_103" Type="smallint" />
+    <Property Name="col_104" Type="smallint" />
+    <Property Name="col_105" Type="smallint" />
+    <Property Name="col_106" Type="smallint" />
+    <Property Name="col_107" Type="smallint" />
+    <Property Name="col_108" Type="smallint" />
+    <Property Name="col_109" Type="smallint" />
+    <Property Name="col_110" Type="smallint" />
+    <Property Name="col_111" Type="smallint" />
+    <Property Name="col_112" Type="smallint" />
+    <Property Name="col_113" Type="smallint" />
+    <Property Name="col_114" Type="smallint" />
+    <Property Name="col_115" Type="smallint" />
+    <Property Name="col_116" Type="smallint" />
+    <Property Name="col_117" Type="smallint" />
+    <Property Name="col_118" Type="smallint" />
+    <Property Name="col_119" Type="smallint" />
+    <Property Name="col_120" Type="smallint" />
+    <Property Name="col_121" Type="smallint" />
+    <Property Name="col_122" Type="smallint" />
+    <Property Name="col_123" Type="smallint" />
+    <Property Name="col_124" Type="smallint" />
+    <Property Name="col_125" Type="smallint" />
+    <Property Name="col_126" Type="smallint" />
+    <Property Name="col_127" Type="smallint" />
+  </EntityType>
+  <EntityType Name="dataset_record">
+    <Key>
+      <PropertyRef Name="dataset_record_id" />
+    </Key>
+    <Property Name="dataset_record_id" Type="bigint" Nullable="false" />
+    <Property Name="doc_id" Type="bigint" />
+    <Property Name="dataset_id" Type="smallint" Nullable="false" />
+    <Property Name="col_000" Type="nvarchar(max)" />
+    <Property Name="col_001" Type="nvarchar(max)" />
+    <Property Name="col_002" Type="nvarchar(max)" />
+    <Property Name="col_003" Type="nvarchar(max)" />
+    <Property Name="col_004" Type="nvarchar(max)" />
+    <Property Name="col_005" Type="nvarchar(max)" />
+    <Property Name="col_006" Type="nvarchar(max)" />
+    <Property Name="col_007" Type="nvarchar(max)" />
+    <Property Name="col_008" Type="nvarchar(max)" />
+    <Property Name="col_009" Type="nvarchar(max)" />
+    <Property Name="col_010" Type="nvarchar(max)" />
+    <Property Name="col_011" Type="nvarchar(max)" />
+    <Property Name="col_012" Type="nvarchar(max)" />
+    <Property Name="col_013" Type="nvarchar(max)" />
+    <Property Name="col_014" Type="nvarchar(max)" />
+    <Property Name="col_015" Type="nvarchar(max)" />
+    <Property Name="col_016" Type="nvarchar(max)" />
+    <Property Name="col_017" Type="nvarchar(max)" />
+    <Property Name="col_018" Type="nvarchar(max)" />
+    <Property Name="col_019" Type="nvarchar(max)" />
+    <Property Name="col_020" Type="nvarchar(max)" />
+    <Property Name="col_021" Type="nvarchar(max)" />
+    <Property Name="col_022" Type="nvarchar(max)" />
+    <Property Name="col_023" Type="nvarchar(max)" />
+    <Property Name="col_024" Type="nvarchar(max)" />
+    <Property Name="col_025" Type="nvarchar(max)" />
+    <Property Name="col_026" Type="nvarchar(max)" />
+    <Property Name="col_027" Type="nvarchar(max)" />
+    <Property Name="col_028" Type="nvarchar(max)" />
+    <Property Name="col_029" Type="nvarchar(max)" />
+    <Property Name="col_030" Type="nvarchar(max)" />
+    <Property Name="col_031" Type="nvarchar(max)" />
+    <Property Name="col_032" Type="nvarchar(max)" />
+    <Property Name="col_033" Type="nvarchar(max)" />
+    <Property Name="col_034" Type="nvarchar(max)" />
+    <Property Name="col_035" Type="nvarchar(max)" />
+    <Property Name="col_036" Type="nvarchar(max)" />
+    <Property Name="col_037" Type="nvarchar(max)" />
+    <Property Name="col_038" Type="nvarchar(max)" />
+    <Property Name="col_039" Type="nvarchar(max)" />
+    <Property Name="col_040" Type="nvarchar(max)" />
+    <Property Name="col_041" Type="nvarchar(max)" />
+    <Property Name="col_042" Type="nvarchar(max)" />
+    <Property Name="col_043" Type="nvarchar(max)" />
+    <Property Name="col_044" Type="nvarchar(max)" />
+    <Property Name="col_045" Type="nvarchar(max)" />
+    <Property Name="col_046" Type="nvarchar(max)" />
+    <Property Name="col_047" Type="nvarchar(max)" />
+    <Property Name="col_048" Type="nvarchar(max)" />
+    <Property Name="col_049" Type="nvarchar(max)" />
+    <Property Name="col_050" Type="nvarchar(max)" />
+    <Property Name="col_051" Type="nvarchar(max)" />
+    <Property Name="col_052" Type="nvarchar(max)" />
+    <Property Name="col_053" Type="nvarchar(max)" />
+    <Property Name="col_054" Type="nvarchar(max)" />
+    <Property Name="col_055" Type="nvarchar(max)" />
+    <Property Name="col_056" Type="nvarchar(max)" />
+    <Property Name="col_057" Type="nvarchar(max)" />
+    <Property Name="col_058" Type="nvarchar(max)" />
+    <Property Name="col_059" Type="nvarchar(max)" />
+    <Property Name="col_060" Type="nvarchar(max)" />
+    <Property Name="col_061" Type="nvarchar(max)" />
+    <Property Name="col_062" Type="nvarchar(max)" />
+    <Property Name="col_063" Type="nvarchar(max)" />
+    <Property Name="col_064" Type="nvarchar(max)" />
+    <Property Name="col_065" Type="nvarchar(max)" />
+    <Property Name="col_066" Type="nvarchar(max)" />
+    <Property Name="col_067" Type="nvarchar(max)" />
+    <Property Name="col_068" Type="nvarchar(max)" />
+    <Property Name="col_069" Type="nvarchar(max)" />
+    <Property Name="col_070" Type="nvarchar(max)" />
+    <Property Name="col_071" Type="nvarchar(max)" />
+    <Property Name="col_072" Type="nvarchar(max)" />
+    <Property Name="col_073" Type="nvarchar(max)" />
+    <Property Name="col_074" Type="nvarchar(max)" />
+    <Property Name="col_075" Type="nvarchar(max)" />
+    <Property Name="col_076" Type="nvarchar(max)" />
+    <Property Name="col_077" Type="nvarchar(max)" />
+    <Property Name="col_078" Type="nvarchar(max)" />
+    <Property Name="col_079" Type="nvarchar(max)" />
+    <Property Name="col_080" Type="nvarchar(max)" />
+    <Property Name="col_081" Type="nvarchar(max)" />
+    <Property Name="col_082" Type="nvarchar(max)" />
+    <Property Name="col_083" Type="nvarchar(max)" />
+    <Property Name="col_084" Type="nvarchar(max)" />
+    <Property Name="col_085" Type="nvarchar(max)" />
+    <Property Name="col_086" Type="nvarchar(max)" />
+    <Property Name="col_087" Type="nvarchar(max)" />
+    <Property Name="col_088" Type="nvarchar(max)" />
+    <Property Name="col_089" Type="nvarchar(max)" />
+    <Property Name="col_090" Type="nvarchar(max)" />
+    <Property Name="col_091" Type="nvarchar(max)" />
+    <Property Name="col_092" Type="nvarchar(max)" />
+    <Property Name="col_093" Type="nvarchar(max)" />
+    <Property Name="col_094" Type="nvarchar(max)" />
+    <Property Name="col_095" Type="nvarchar(max)" />
+    <Property Name="col_096" Type="nvarchar(max)" />
+    <Property Name="col_097" Type="nvarchar(max)" />
+    <Property Name="col_098" Type="nvarchar(max)" />
+    <Property Name="col_099" Type="nvarchar(max)" />
+    <Property Name="col_100" Type="nvarchar(max)" />
+    <Property Name="col_101" Type="nvarchar(max)" />
+    <Property Name="col_102" Type="nvarchar(max)" />
+    <Property Name="col_103" Type="nvarchar(max)" />
+    <Property Name="col_104" Type="nvarchar(max)" />
+    <Property Name="col_105" Type="nvarchar(max)" />
+    <Property Name="col_106" Type="nvarchar(max)" />
+    <Property Name="col_107" Type="nvarchar(max)" />
+    <Property Name="col_108" Type="nvarchar(max)" />
+    <Property Name="col_109" Type="nvarchar(max)" />
+    <Property Name="col_110" Type="nvarchar(max)" />
+    <Property Name="col_111" Type="nvarchar(max)" />
+    <Property Name="col_112" Type="nvarchar(max)" />
+    <Property Name="col_113" Type="nvarchar(max)" />
+    <Property Name="col_114" Type="nvarchar(max)" />
+    <Property Name="col_115" Type="nvarchar(max)" />
+    <Property Name="col_116" Type="nvarchar(max)" />
+    <Property Name="col_117" Type="nvarchar(max)" />
+    <Property Name="col_118" Type="nvarchar(max)" />
+    <Property Name="col_119" Type="nvarchar(max)" />
+    <Property Name="col_120" Type="nvarchar(max)" />
+    <Property Name="col_121" Type="nvarchar(max)" />
+    <Property Name="col_122" Type="nvarchar(max)" />
+    <Property Name="col_123" Type="nvarchar(max)" />
+    <Property Name="col_124" Type="nvarchar(max)" />
+    <Property Name="col_125" Type="nvarchar(max)" />
+    <Property Name="col_126" Type="nvarchar(max)" />
+    <Property Name="col_127" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="dip_batch">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="doc_count" Type="int" Nullable="false" />
+    <Property Name="file_path" Type="nvarchar(max)" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="flags" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="diskgroup">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="flags" Type="int" Nullable="false" />
+    <Property Name="max_fldr_files" Type="int" Nullable="false" />
+    <Property Name="max_vol_bytes" Type="bigint" Nullable="false" />
+    <Property Name="next_vol" Type="int" Nullable="false" />
+    <Property Name="root_path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="default_volume_flags" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="doc_type_mapping">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="lookup_000" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="lookup_001" Type="nvarchar(max)" />
+    <Property Name="lookup_002" Type="nvarchar(max)" />
+    <Property Name="lookup_003" Type="nvarchar(max)" />
+    <Property Name="lookup_004" Type="nvarchar(max)" />
+    <Property Name="ob_doc_reason_lookup" Type="nvarchar(max)" />
+    <Property Name="key_type_mapset_id" Type="smallint" />
+    <Property Name="ob_doc_type_id" Type="smallint" />
+  </EntityType>
+  <EntityType Name="document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="legacy_id" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="phase" Type="int" Nullable="false" />
+    <Property Name="exclusion_code" Type="int" />
+    <Property Name="exception_code" Type="int" />
+    <Property Name="dip_batch_id" Type="int" />
+    <Property Name="docset_local_id" Type="bigint" />
+    <Property Name="docset_remote_id" Type="bigint" />
+    <Property Name="inventory_history_id" Type="smallint" Nullable="false" />
+    <Property Name="snapshot_id" Type="smallint" />
+    <Property Name="legacy_source" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field">
+    <Key>
+      <PropertyRef Name="field_id" />
+    </Key>
+    <Property Name="field_id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="file">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="doc_id" Type="bigint" />
+    <Property Name="volume_id" Type="bigint" Nullable="false" />
+    <Property Name="relative_path" Type="nvarchar(max)" />
+    <Property Name="file_size" Type="int" Nullable="false" />
+    <Property Name="file_type_id" Type="int" />
+    <Property Name="sb_file_type" Type="int" />
+    <Property Name="snapshot_id" Type="smallint" />
+    <Property Name="seq" Type="int" Nullable="false" />
+    <Property Name="page_count" Type="int" />
+    <Property Name="x_dpi" Type="int" />
+    <Property Name="y_dpi" Type="int" />
+  </EntityType>
+  <EntityType Name="file_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="file_type" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="hsi_filetypenum" Type="bigint" />
+    <Property Name="sb_file_type" Type="int" />
+    <Property Name="file_extension" Type="nvarchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="key_type_mapset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="metadata_doc_date" Type="smallint" Nullable="false" />
+    <Property Name="col_000" Type="smallint" />
+    <Property Name="col_001" Type="smallint" />
+    <Property Name="col_002" Type="smallint" />
+    <Property Name="col_003" Type="smallint" />
+    <Property Name="col_004" Type="smallint" />
+    <Property Name="col_005" Type="smallint" />
+    <Property Name="col_006" Type="smallint" />
+    <Property Name="col_007" Type="smallint" />
+    <Property Name="col_008" Type="smallint" />
+    <Property Name="col_009" Type="smallint" />
+    <Property Name="col_010" Type="smallint" />
+    <Property Name="col_011" Type="smallint" />
+    <Property Name="col_012" Type="smallint" />
+    <Property Name="col_013" Type="smallint" />
+    <Property Name="col_014" Type="smallint" />
+    <Property Name="col_015" Type="smallint" />
+    <Property Name="col_016" Type="smallint" />
+    <Property Name="col_017" Type="smallint" />
+    <Property Name="col_018" Type="smallint" />
+    <Property Name="col_019" Type="smallint" />
+    <Property Name="col_020" Type="smallint" />
+    <Property Name="col_021" Type="smallint" />
+    <Property Name="col_022" Type="smallint" />
+    <Property Name="col_023" Type="smallint" />
+    <Property Name="col_024" Type="smallint" />
+    <Property Name="col_025" Type="smallint" />
+    <Property Name="col_026" Type="smallint" />
+    <Property Name="col_027" Type="smallint" />
+    <Property Name="col_028" Type="smallint" />
+    <Property Name="col_029" Type="smallint" />
+    <Property Name="col_030" Type="smallint" />
+    <Property Name="col_031" Type="smallint" />
+    <Property Name="col_032" Type="smallint" />
+    <Property Name="col_033" Type="smallint" />
+    <Property Name="col_034" Type="smallint" />
+    <Property Name="col_035" Type="smallint" />
+    <Property Name="col_036" Type="smallint" />
+    <Property Name="col_037" Type="smallint" />
+    <Property Name="col_038" Type="smallint" />
+    <Property Name="col_039" Type="smallint" />
+    <Property Name="col_040" Type="smallint" />
+    <Property Name="col_041" Type="smallint" />
+    <Property Name="col_042" Type="smallint" />
+    <Property Name="col_043" Type="smallint" />
+    <Property Name="col_044" Type="smallint" />
+    <Property Name="col_045" Type="smallint" />
+    <Property Name="col_046" Type="smallint" />
+    <Property Name="col_047" Type="smallint" />
+    <Property Name="col_048" Type="smallint" />
+    <Property Name="col_049" Type="smallint" />
+    <Property Name="col_050" Type="smallint" />
+    <Property Name="col_051" Type="smallint" />
+    <Property Name="col_052" Type="smallint" />
+    <Property Name="col_053" Type="smallint" />
+    <Property Name="col_054" Type="smallint" />
+    <Property Name="col_055" Type="smallint" />
+    <Property Name="col_056" Type="smallint" />
+    <Property Name="col_057" Type="smallint" />
+    <Property Name="col_058" Type="smallint" />
+    <Property Name="col_059" Type="smallint" />
+    <Property Name="col_060" Type="smallint" />
+    <Property Name="col_061" Type="smallint" />
+    <Property Name="col_062" Type="smallint" />
+    <Property Name="col_063" Type="smallint" />
+    <Property Name="col_064" Type="smallint" />
+    <Property Name="col_065" Type="smallint" />
+    <Property Name="col_066" Type="smallint" />
+    <Property Name="col_067" Type="smallint" />
+    <Property Name="col_068" Type="smallint" />
+    <Property Name="col_069" Type="smallint" />
+    <Property Name="col_070" Type="smallint" />
+    <Property Name="col_071" Type="smallint" />
+    <Property Name="col_072" Type="smallint" />
+    <Property Name="col_073" Type="smallint" />
+    <Property Name="col_074" Type="smallint" />
+    <Property Name="col_075" Type="smallint" />
+    <Property Name="col_076" Type="smallint" />
+    <Property Name="col_077" Type="smallint" />
+    <Property Name="col_078" Type="smallint" />
+    <Property Name="col_079" Type="smallint" />
+    <Property Name="col_080" Type="smallint" />
+    <Property Name="col_081" Type="smallint" />
+    <Property Name="col_082" Type="smallint" />
+    <Property Name="col_083" Type="smallint" />
+    <Property Name="col_084" Type="smallint" />
+    <Property Name="col_085" Type="smallint" />
+    <Property Name="col_086" Type="smallint" />
+    <Property Name="col_087" Type="smallint" />
+    <Property Name="col_088" Type="smallint" />
+    <Property Name="col_089" Type="smallint" />
+    <Property Name="col_090" Type="smallint" />
+    <Property Name="col_091" Type="smallint" />
+    <Property Name="col_092" Type="smallint" />
+    <Property Name="col_093" Type="smallint" />
+    <Property Name="col_094" Type="smallint" />
+    <Property Name="col_095" Type="smallint" />
+    <Property Name="col_096" Type="smallint" />
+    <Property Name="col_097" Type="smallint" />
+    <Property Name="col_098" Type="smallint" />
+    <Property Name="col_099" Type="smallint" />
+    <Property Name="col_100" Type="smallint" />
+    <Property Name="col_101" Type="smallint" />
+    <Property Name="col_102" Type="smallint" />
+    <Property Name="col_103" Type="smallint" />
+    <Property Name="col_104" Type="smallint" />
+    <Property Name="col_105" Type="smallint" />
+    <Property Name="col_106" Type="smallint" />
+    <Property Name="col_107" Type="smallint" />
+    <Property Name="col_108" Type="smallint" />
+    <Property Name="col_109" Type="smallint" />
+    <Property Name="col_110" Type="smallint" />
+    <Property Name="col_111" Type="smallint" />
+    <Property Name="col_112" Type="smallint" />
+    <Property Name="col_113" Type="smallint" />
+    <Property Name="col_114" Type="smallint" />
+    <Property Name="col_115" Type="smallint" />
+    <Property Name="col_116" Type="smallint" />
+    <Property Name="col_117" Type="smallint" />
+    <Property Name="col_118" Type="smallint" />
+    <Property Name="col_119" Type="smallint" />
+    <Property Name="col_120" Type="smallint" />
+    <Property Name="col_121" Type="smallint" />
+    <Property Name="col_122" Type="smallint" />
+    <Property Name="col_123" Type="smallint" />
+    <Property Name="col_124" Type="smallint" />
+    <Property Name="col_125" Type="smallint" />
+    <Property Name="col_126" Type="smallint" />
+    <Property Name="col_127" Type="smallint" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="col_128" Type="smallint" />
+    <Property Name="col_129" Type="smallint" />
+    <Property Name="col_130" Type="smallint" />
+    <Property Name="col_131" Type="smallint" />
+    <Property Name="col_132" Type="smallint" />
+    <Property Name="col_133" Type="smallint" />
+    <Property Name="col_134" Type="smallint" />
+    <Property Name="col_135" Type="smallint" />
+    <Property Name="col_136" Type="smallint" />
+    <Property Name="col_137" Type="smallint" />
+    <Property Name="col_138" Type="smallint" />
+    <Property Name="col_139" Type="smallint" />
+    <Property Name="col_140" Type="smallint" />
+    <Property Name="col_141" Type="smallint" />
+    <Property Name="col_142" Type="smallint" />
+    <Property Name="col_143" Type="smallint" />
+    <Property Name="col_144" Type="smallint" />
+    <Property Name="col_145" Type="smallint" />
+    <Property Name="col_146" Type="smallint" />
+    <Property Name="col_147" Type="smallint" />
+    <Property Name="col_148" Type="smallint" />
+    <Property Name="col_149" Type="smallint" />
+    <Property Name="col_150" Type="smallint" />
+    <Property Name="col_151" Type="smallint" />
+    <Property Name="col_152" Type="smallint" />
+    <Property Name="col_153" Type="smallint" />
+    <Property Name="col_154" Type="smallint" />
+    <Property Name="col_155" Type="smallint" />
+    <Property Name="col_156" Type="smallint" />
+    <Property Name="col_157" Type="smallint" />
+    <Property Name="col_158" Type="smallint" />
+    <Property Name="col_159" Type="smallint" />
+    <Property Name="col_160" Type="smallint" />
+    <Property Name="col_161" Type="smallint" />
+    <Property Name="col_162" Type="smallint" />
+    <Property Name="col_163" Type="smallint" />
+    <Property Name="col_164" Type="smallint" />
+    <Property Name="col_165" Type="smallint" />
+    <Property Name="col_166" Type="smallint" />
+    <Property Name="col_167" Type="smallint" />
+    <Property Name="col_168" Type="smallint" />
+    <Property Name="col_169" Type="smallint" />
+    <Property Name="col_170" Type="smallint" />
+    <Property Name="col_171" Type="smallint" />
+    <Property Name="col_172" Type="smallint" />
+    <Property Name="col_173" Type="smallint" />
+    <Property Name="col_174" Type="smallint" />
+    <Property Name="col_175" Type="smallint" />
+    <Property Name="col_176" Type="smallint" />
+    <Property Name="col_177" Type="smallint" />
+    <Property Name="col_178" Type="smallint" />
+    <Property Name="col_179" Type="smallint" />
+    <Property Name="col_180" Type="smallint" />
+    <Property Name="col_181" Type="smallint" />
+    <Property Name="col_182" Type="smallint" />
+    <Property Name="col_183" Type="smallint" />
+    <Property Name="col_184" Type="smallint" />
+    <Property Name="col_185" Type="smallint" />
+    <Property Name="col_186" Type="smallint" />
+    <Property Name="col_187" Type="smallint" />
+    <Property Name="col_188" Type="smallint" />
+    <Property Name="col_189" Type="smallint" />
+    <Property Name="col_190" Type="smallint" />
+    <Property Name="col_191" Type="smallint" />
+    <Property Name="col_192" Type="smallint" />
+    <Property Name="col_193" Type="smallint" />
+    <Property Name="col_194" Type="smallint" />
+    <Property Name="col_195" Type="smallint" />
+    <Property Name="col_196" Type="smallint" />
+    <Property Name="col_197" Type="smallint" />
+    <Property Name="col_198" Type="smallint" />
+    <Property Name="col_199" Type="smallint" />
+    <Property Name="col_200" Type="smallint" />
+    <Property Name="col_201" Type="smallint" />
+    <Property Name="col_202" Type="smallint" />
+    <Property Name="col_203" Type="smallint" />
+    <Property Name="col_204" Type="smallint" />
+    <Property Name="col_205" Type="smallint" />
+    <Property Name="col_206" Type="smallint" />
+    <Property Name="col_207" Type="smallint" />
+    <Property Name="col_208" Type="smallint" />
+    <Property Name="col_209" Type="smallint" />
+    <Property Name="col_210" Type="smallint" />
+    <Property Name="col_211" Type="smallint" />
+    <Property Name="col_212" Type="smallint" />
+    <Property Name="col_213" Type="smallint" />
+    <Property Name="col_214" Type="smallint" />
+    <Property Name="col_215" Type="smallint" />
+    <Property Name="col_216" Type="smallint" />
+    <Property Name="col_217" Type="smallint" />
+    <Property Name="col_218" Type="smallint" />
+    <Property Name="col_219" Type="smallint" />
+    <Property Name="col_220" Type="smallint" />
+    <Property Name="col_221" Type="smallint" />
+    <Property Name="col_222" Type="smallint" />
+    <Property Name="col_223" Type="smallint" />
+    <Property Name="col_224" Type="smallint" />
+    <Property Name="col_225" Type="smallint" />
+    <Property Name="col_226" Type="smallint" />
+    <Property Name="col_227" Type="smallint" />
+    <Property Name="col_228" Type="smallint" />
+    <Property Name="col_229" Type="smallint" />
+    <Property Name="col_230" Type="smallint" />
+    <Property Name="col_231" Type="smallint" />
+    <Property Name="col_232" Type="smallint" />
+    <Property Name="col_233" Type="smallint" />
+    <Property Name="col_234" Type="smallint" />
+    <Property Name="col_235" Type="smallint" />
+    <Property Name="col_236" Type="smallint" />
+    <Property Name="col_237" Type="smallint" />
+    <Property Name="col_238" Type="smallint" />
+    <Property Name="col_239" Type="smallint" />
+    <Property Name="col_240" Type="smallint" />
+    <Property Name="col_241" Type="smallint" />
+    <Property Name="col_242" Type="smallint" />
+    <Property Name="col_243" Type="smallint" />
+    <Property Name="col_244" Type="smallint" />
+    <Property Name="col_245" Type="smallint" />
+    <Property Name="col_246" Type="smallint" />
+    <Property Name="col_247" Type="smallint" />
+    <Property Name="col_248" Type="smallint" />
+    <Property Name="col_249" Type="smallint" />
+    <Property Name="col_250" Type="smallint" />
+    <Property Name="col_251" Type="smallint" />
+    <Property Name="col_252" Type="smallint" />
+    <Property Name="col_253" Type="smallint" />
+    <Property Name="col_254" Type="smallint" />
+    <Property Name="col_255" Type="smallint" />
+  </EntityType>
+  <EntityType Name="legacy_file_info">
+    <Key>
+      <PropertyRef Name="file_id" />
+    </Key>
+    <Property Name="file_id" Type="bigint" Nullable="false" />
+    <Property Name="deleted" Type="bit" Nullable="false" />
+    <Property Name="legacy_file_id" Type="nvarchar(max)" />
+    <Property Name="legacy_file_type" Type="nvarchar(max)" />
+    <Property Name="version_number" Type="int" />
+    <Property Name="seq" Type="int" Nullable="false" />
+    <Property Name="legacy_rotation" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="max_num_keys">
+    <Key>
+      <PropertyRef Name="num_key" />
+    </Key>
+    <Property Name="num_key" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="descr" Type="nvarchar" MaxLength="128" />
+    <Property Name="next_id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="metadata">
+    <Key>
+      <PropertyRef Name="doc_id" />
+    </Key>
+    <Property Name="doc_id" Type="bigint" Nullable="false" />
+    <Property Name="col_000" Type="nvarchar(max)" />
+    <Property Name="col_001" Type="nvarchar(max)" />
+    <Property Name="col_002" Type="nvarchar(max)" />
+    <Property Name="col_003" Type="nvarchar(max)" />
+    <Property Name="col_004" Type="nvarchar(max)" />
+    <Property Name="col_005" Type="nvarchar(max)" />
+    <Property Name="col_006" Type="nvarchar(max)" />
+    <Property Name="col_007" Type="nvarchar(max)" />
+    <Property Name="col_008" Type="nvarchar(max)" />
+    <Property Name="col_009" Type="nvarchar(max)" />
+    <Property Name="col_010" Type="nvarchar(max)" />
+    <Property Name="col_011" Type="nvarchar(max)" />
+    <Property Name="col_012" Type="nvarchar(max)" />
+    <Property Name="col_013" Type="nvarchar(max)" />
+    <Property Name="col_014" Type="nvarchar(max)" />
+    <Property Name="col_015" Type="nvarchar(max)" />
+    <Property Name="col_016" Type="nvarchar(max)" />
+    <Property Name="col_017" Type="nvarchar(max)" />
+    <Property Name="col_018" Type="nvarchar(max)" />
+    <Property Name="col_019" Type="nvarchar(max)" />
+    <Property Name="col_020" Type="nvarchar(max)" />
+    <Property Name="col_021" Type="nvarchar(max)" />
+    <Property Name="col_022" Type="nvarchar(max)" />
+    <Property Name="col_023" Type="nvarchar(max)" />
+    <Property Name="col_024" Type="nvarchar(max)" />
+    <Property Name="col_025" Type="nvarchar(max)" />
+    <Property Name="col_026" Type="nvarchar(max)" />
+    <Property Name="col_027" Type="nvarchar(max)" />
+    <Property Name="col_028" Type="nvarchar(max)" />
+    <Property Name="col_029" Type="nvarchar(max)" />
+    <Property Name="col_030" Type="nvarchar(max)" />
+    <Property Name="col_031" Type="nvarchar(max)" />
+    <Property Name="col_032" Type="nvarchar(max)" />
+    <Property Name="col_033" Type="nvarchar(max)" />
+    <Property Name="col_034" Type="nvarchar(max)" />
+    <Property Name="col_035" Type="nvarchar(max)" />
+    <Property Name="col_036" Type="nvarchar(max)" />
+    <Property Name="col_037" Type="nvarchar(max)" />
+    <Property Name="col_038" Type="nvarchar(max)" />
+    <Property Name="col_039" Type="nvarchar(max)" />
+    <Property Name="col_040" Type="nvarchar(max)" />
+    <Property Name="col_041" Type="nvarchar(max)" />
+    <Property Name="col_042" Type="nvarchar(max)" />
+    <Property Name="col_043" Type="nvarchar(max)" />
+    <Property Name="col_044" Type="nvarchar(max)" />
+    <Property Name="col_045" Type="nvarchar(max)" />
+    <Property Name="col_046" Type="nvarchar(max)" />
+    <Property Name="col_047" Type="nvarchar(max)" />
+    <Property Name="col_048" Type="nvarchar(max)" />
+    <Property Name="col_049" Type="nvarchar(max)" />
+    <Property Name="col_050" Type="nvarchar(max)" />
+    <Property Name="col_051" Type="nvarchar(max)" />
+    <Property Name="col_052" Type="nvarchar(max)" />
+    <Property Name="col_053" Type="nvarchar(max)" />
+    <Property Name="col_054" Type="nvarchar(max)" />
+    <Property Name="col_055" Type="nvarchar(max)" />
+    <Property Name="col_056" Type="nvarchar(max)" />
+    <Property Name="col_057" Type="nvarchar(max)" />
+    <Property Name="col_058" Type="nvarchar(max)" />
+    <Property Name="col_059" Type="nvarchar(max)" />
+    <Property Name="col_060" Type="nvarchar(max)" />
+    <Property Name="col_061" Type="nvarchar(max)" />
+    <Property Name="col_062" Type="nvarchar(max)" />
+    <Property Name="col_063" Type="nvarchar(max)" />
+    <Property Name="col_064" Type="nvarchar(max)" />
+    <Property Name="col_065" Type="nvarchar(max)" />
+    <Property Name="col_066" Type="nvarchar(max)" />
+    <Property Name="col_067" Type="nvarchar(max)" />
+    <Property Name="col_068" Type="nvarchar(max)" />
+    <Property Name="col_069" Type="nvarchar(max)" />
+    <Property Name="col_070" Type="nvarchar(max)" />
+    <Property Name="col_071" Type="nvarchar(max)" />
+    <Property Name="col_072" Type="nvarchar(max)" />
+    <Property Name="col_073" Type="nvarchar(max)" />
+    <Property Name="col_074" Type="nvarchar(max)" />
+    <Property Name="col_075" Type="nvarchar(max)" />
+    <Property Name="col_076" Type="nvarchar(max)" />
+    <Property Name="col_077" Type="nvarchar(max)" />
+    <Property Name="col_078" Type="nvarchar(max)" />
+    <Property Name="col_079" Type="nvarchar(max)" />
+    <Property Name="col_080" Type="nvarchar(max)" />
+    <Property Name="col_081" Type="nvarchar(max)" />
+    <Property Name="col_082" Type="nvarchar(max)" />
+    <Property Name="col_083" Type="nvarchar(max)" />
+    <Property Name="col_084" Type="nvarchar(max)" />
+    <Property Name="col_085" Type="nvarchar(max)" />
+    <Property Name="col_086" Type="nvarchar(max)" />
+    <Property Name="col_087" Type="nvarchar(max)" />
+    <Property Name="col_088" Type="nvarchar(max)" />
+    <Property Name="col_089" Type="nvarchar(max)" />
+    <Property Name="col_090" Type="nvarchar(max)" />
+    <Property Name="col_091" Type="nvarchar(max)" />
+    <Property Name="col_092" Type="nvarchar(max)" />
+    <Property Name="col_093" Type="nvarchar(max)" />
+    <Property Name="col_094" Type="nvarchar(max)" />
+    <Property Name="col_095" Type="nvarchar(max)" />
+    <Property Name="col_096" Type="nvarchar(max)" />
+    <Property Name="col_097" Type="nvarchar(max)" />
+    <Property Name="col_098" Type="nvarchar(max)" />
+    <Property Name="col_099" Type="nvarchar(max)" />
+    <Property Name="col_100" Type="nvarchar(max)" />
+    <Property Name="col_101" Type="nvarchar(max)" />
+    <Property Name="col_102" Type="nvarchar(max)" />
+    <Property Name="col_103" Type="nvarchar(max)" />
+    <Property Name="col_104" Type="nvarchar(max)" />
+    <Property Name="col_105" Type="nvarchar(max)" />
+    <Property Name="col_106" Type="nvarchar(max)" />
+    <Property Name="col_107" Type="nvarchar(max)" />
+    <Property Name="col_108" Type="nvarchar(max)" />
+    <Property Name="col_109" Type="nvarchar(max)" />
+    <Property Name="col_110" Type="nvarchar(max)" />
+    <Property Name="col_111" Type="nvarchar(max)" />
+    <Property Name="col_112" Type="nvarchar(max)" />
+    <Property Name="col_113" Type="nvarchar(max)" />
+    <Property Name="col_114" Type="nvarchar(max)" />
+    <Property Name="col_115" Type="nvarchar(max)" />
+    <Property Name="col_116" Type="nvarchar(max)" />
+    <Property Name="col_117" Type="nvarchar(max)" />
+    <Property Name="col_118" Type="nvarchar(max)" />
+    <Property Name="col_119" Type="nvarchar(max)" />
+    <Property Name="col_120" Type="nvarchar(max)" />
+    <Property Name="col_121" Type="nvarchar(max)" />
+    <Property Name="col_122" Type="nvarchar(max)" />
+    <Property Name="col_123" Type="nvarchar(max)" />
+    <Property Name="col_124" Type="nvarchar(max)" />
+    <Property Name="col_125" Type="nvarchar(max)" />
+    <Property Name="col_126" Type="nvarchar(max)" />
+    <Property Name="col_127" Type="nvarchar(max)" />
+    <Property Name="snapshot_id" Type="smallint" Nullable="false" />
+    <Property Name="col_128" Type="nvarchar(max)" />
+    <Property Name="col_129" Type="nvarchar(max)" />
+    <Property Name="col_130" Type="nvarchar(max)" />
+    <Property Name="col_131" Type="nvarchar(max)" />
+    <Property Name="col_132" Type="nvarchar(max)" />
+    <Property Name="col_133" Type="nvarchar(max)" />
+    <Property Name="col_134" Type="nvarchar(max)" />
+    <Property Name="col_135" Type="nvarchar(max)" />
+    <Property Name="col_136" Type="nvarchar(max)" />
+    <Property Name="col_137" Type="nvarchar(max)" />
+    <Property Name="col_138" Type="nvarchar(max)" />
+    <Property Name="col_139" Type="nvarchar(max)" />
+    <Property Name="col_140" Type="nvarchar(max)" />
+    <Property Name="col_141" Type="nvarchar(max)" />
+    <Property Name="col_142" Type="nvarchar(max)" />
+    <Property Name="col_143" Type="nvarchar(max)" />
+    <Property Name="col_144" Type="nvarchar(max)" />
+    <Property Name="col_145" Type="nvarchar(max)" />
+    <Property Name="col_146" Type="nvarchar(max)" />
+    <Property Name="col_147" Type="nvarchar(max)" />
+    <Property Name="col_148" Type="nvarchar(max)" />
+    <Property Name="col_149" Type="nvarchar(max)" />
+    <Property Name="col_150" Type="nvarchar(max)" />
+    <Property Name="col_151" Type="nvarchar(max)" />
+    <Property Name="col_152" Type="nvarchar(max)" />
+    <Property Name="col_153" Type="nvarchar(max)" />
+    <Property Name="col_154" Type="nvarchar(max)" />
+    <Property Name="col_155" Type="nvarchar(max)" />
+    <Property Name="col_156" Type="nvarchar(max)" />
+    <Property Name="col_157" Type="nvarchar(max)" />
+    <Property Name="col_158" Type="nvarchar(max)" />
+    <Property Name="col_159" Type="nvarchar(max)" />
+    <Property Name="col_160" Type="nvarchar(max)" />
+    <Property Name="col_161" Type="nvarchar(max)" />
+    <Property Name="col_162" Type="nvarchar(max)" />
+    <Property Name="col_163" Type="nvarchar(max)" />
+    <Property Name="col_164" Type="nvarchar(max)" />
+    <Property Name="col_165" Type="nvarchar(max)" />
+    <Property Name="col_166" Type="nvarchar(max)" />
+    <Property Name="col_167" Type="nvarchar(max)" />
+    <Property Name="col_168" Type="nvarchar(max)" />
+    <Property Name="col_169" Type="nvarchar(max)" />
+    <Property Name="col_170" Type="nvarchar(max)" />
+    <Property Name="col_171" Type="nvarchar(max)" />
+    <Property Name="col_172" Type="nvarchar(max)" />
+    <Property Name="col_173" Type="nvarchar(max)" />
+    <Property Name="col_174" Type="nvarchar(max)" />
+    <Property Name="col_175" Type="nvarchar(max)" />
+    <Property Name="col_176" Type="nvarchar(max)" />
+    <Property Name="col_177" Type="nvarchar(max)" />
+    <Property Name="col_178" Type="nvarchar(max)" />
+    <Property Name="col_179" Type="nvarchar(max)" />
+    <Property Name="col_180" Type="nvarchar(max)" />
+    <Property Name="col_181" Type="nvarchar(max)" />
+    <Property Name="col_182" Type="nvarchar(max)" />
+    <Property Name="col_183" Type="nvarchar(max)" />
+    <Property Name="col_184" Type="nvarchar(max)" />
+    <Property Name="col_185" Type="nvarchar(max)" />
+    <Property Name="col_186" Type="nvarchar(max)" />
+    <Property Name="col_187" Type="nvarchar(max)" />
+    <Property Name="col_188" Type="nvarchar(max)" />
+    <Property Name="col_189" Type="nvarchar(max)" />
+    <Property Name="col_190" Type="nvarchar(max)" />
+    <Property Name="col_191" Type="nvarchar(max)" />
+    <Property Name="col_192" Type="nvarchar(max)" />
+    <Property Name="col_193" Type="nvarchar(max)" />
+    <Property Name="col_194" Type="nvarchar(max)" />
+    <Property Name="col_195" Type="nvarchar(max)" />
+    <Property Name="col_196" Type="nvarchar(max)" />
+    <Property Name="col_197" Type="nvarchar(max)" />
+    <Property Name="col_198" Type="nvarchar(max)" />
+    <Property Name="col_199" Type="nvarchar(max)" />
+    <Property Name="col_200" Type="nvarchar(max)" />
+    <Property Name="col_201" Type="nvarchar(max)" />
+    <Property Name="col_202" Type="nvarchar(max)" />
+    <Property Name="col_203" Type="nvarchar(max)" />
+    <Property Name="col_204" Type="nvarchar(max)" />
+    <Property Name="col_205" Type="nvarchar(max)" />
+    <Property Name="col_206" Type="nvarchar(max)" />
+    <Property Name="col_207" Type="nvarchar(max)" />
+    <Property Name="col_208" Type="nvarchar(max)" />
+    <Property Name="col_209" Type="nvarchar(max)" />
+    <Property Name="col_210" Type="nvarchar(max)" />
+    <Property Name="col_211" Type="nvarchar(max)" />
+    <Property Name="col_212" Type="nvarchar(max)" />
+    <Property Name="col_213" Type="nvarchar(max)" />
+    <Property Name="col_214" Type="nvarchar(max)" />
+    <Property Name="col_215" Type="nvarchar(max)" />
+    <Property Name="col_216" Type="nvarchar(max)" />
+    <Property Name="col_217" Type="nvarchar(max)" />
+    <Property Name="col_218" Type="nvarchar(max)" />
+    <Property Name="col_219" Type="nvarchar(max)" />
+    <Property Name="col_220" Type="nvarchar(max)" />
+    <Property Name="col_221" Type="nvarchar(max)" />
+    <Property Name="col_222" Type="nvarchar(max)" />
+    <Property Name="col_223" Type="nvarchar(max)" />
+    <Property Name="col_224" Type="nvarchar(max)" />
+    <Property Name="col_225" Type="nvarchar(max)" />
+    <Property Name="col_226" Type="nvarchar(max)" />
+    <Property Name="col_227" Type="nvarchar(max)" />
+    <Property Name="col_228" Type="nvarchar(max)" />
+    <Property Name="col_229" Type="nvarchar(max)" />
+    <Property Name="col_230" Type="nvarchar(max)" />
+    <Property Name="col_231" Type="nvarchar(max)" />
+    <Property Name="col_232" Type="nvarchar(max)" />
+    <Property Name="col_233" Type="nvarchar(max)" />
+    <Property Name="col_234" Type="nvarchar(max)" />
+    <Property Name="col_235" Type="nvarchar(max)" />
+    <Property Name="col_236" Type="nvarchar(max)" />
+    <Property Name="col_237" Type="nvarchar(max)" />
+    <Property Name="col_238" Type="nvarchar(max)" />
+    <Property Name="col_239" Type="nvarchar(max)" />
+    <Property Name="col_240" Type="nvarchar(max)" />
+    <Property Name="col_241" Type="nvarchar(max)" />
+    <Property Name="col_242" Type="nvarchar(max)" />
+    <Property Name="col_243" Type="nvarchar(max)" />
+    <Property Name="col_244" Type="nvarchar(max)" />
+    <Property Name="col_245" Type="nvarchar(max)" />
+    <Property Name="col_246" Type="nvarchar(max)" />
+    <Property Name="col_247" Type="nvarchar(max)" />
+    <Property Name="col_248" Type="nvarchar(max)" />
+    <Property Name="col_249" Type="nvarchar(max)" />
+    <Property Name="col_250" Type="nvarchar(max)" />
+    <Property Name="col_251" Type="nvarchar(max)" />
+    <Property Name="col_252" Type="nvarchar(max)" />
+    <Property Name="col_253" Type="nvarchar(max)" />
+    <Property Name="col_254" Type="nvarchar(max)" />
+    <Property Name="col_255" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="note">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="obsolete_file_id" Type="bigint" />
+    <Property Name="legacy_note_type" Type="nvarchar(max)" />
+    <Property Name="obsolete_note_type_num" Type="bigint" />
+    <Property Name="note_datetime" Type="datetime2" Precision="7" />
+    <Property Name="note_text" Type="nvarchar(max)" />
+    <Property Name="legacy_page_number" Type="int" />
+    <Property Name="legacy_pos_x" Type="int" />
+    <Property Name="legacy_pos_y" Type="int" />
+    <Property Name="obsolete_len_x" Type="int" />
+    <Property Name="obsolete_len_y" Type="int" />
+    <Property Name="obsolete_seq" Type="bigint" />
+    <Property Name="doc_id" Type="bigint" />
+  </EntityType>
+  <EntityType Name="onbase_doc_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ob_itemtypenum_prod" Type="bigint" />
+    <Property Name="ob_itemtypenum_test" Type="bigint" />
+  </EntityType>
+  <EntityType Name="onbase_document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="doc_id" Type="bigint" Nullable="false" />
+    <Property Name="reason" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="version_number" Type="int" />
+  </EntityType>
+  <EntityType Name="onbase_file_info">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="file_id" Type="bigint" Nullable="false" />
+    <Property Name="onbase_doc_id" Type="bigint" Nullable="false" />
+    <Property Name="seq" Type="int" Nullable="false" />
+    <Property Name="ob_imagetype" Type="int" />
+  </EntityType>
+  <EntityType Name="onbase_key_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ob_datatype" Type="bigint" />
+    <Property Name="ob_keytypelen" Type="bigint" />
+    <Property Name="ob_keytypenum_prod" Type="bigint" />
+    <Property Name="ob_keytypenum_test" Type="bigint" />
+  </EntityType>
+  <EntityType Name="onbase_note">
+    <Key>
+      <PropertyRef Name="onbase_note_id" />
+    </Key>
+    <Property Name="onbase_note_id" Type="bigint" Nullable="false" />
+    <Property Name="len_x" Type="int" />
+    <Property Name="len_y" Type="int" />
+    <Property Name="note_datetime" Type="datetime2" Precision="7" />
+    <Property Name="page_number" Type="int" />
+    <Property Name="note_type_num" Type="int" Nullable="false" />
+    <Property Name="pos_x" Type="int" />
+    <Property Name="pos_y" Type="int" />
+    <Property Name="note_text" Type="nvarchar(max)" />
+    <Property Name="onbase_doc_id" Type="bigint" />
+  </EntityType>
+  <EntityType Name="snapshot">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="create_time" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="doc_count" Type="int" Nullable="false" />
+    <Property Name="locked" Type="bit" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="error" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dataset_field_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="dataset_field" Type="Self.dataset_field" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_field">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_mapset_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1" />
+    <End Role="dataset_mapset" Type="Self.dataset_mapset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_mapset">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_mapset_key_type_mapset_key_type_mapset_id">
+    <End Role="key_type_mapset" Type="Self.key_type_mapset" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="dataset_mapset" Type="Self.dataset_mapset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="key_type_mapset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dataset_mapset">
+        <PropertyRef Name="key_type_mapset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_record_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1" />
+    <End Role="dataset_record" Type="Self.dataset_record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_record">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_record_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="dataset_record" Type="Self.dataset_record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dataset_record">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doc_type_mapping_key_type_mapset_key_type_mapset_id">
+    <End Role="key_type_mapset" Type="Self.key_type_mapset" Multiplicity="0..1" />
+    <End Role="doc_type_mapping" Type="Self.doc_type_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="key_type_mapset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doc_type_mapping">
+        <PropertyRef Name="key_type_mapset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id">
+    <End Role="onbase_doc_type" Type="Self.onbase_doc_type" Multiplicity="0..1" />
+    <End Role="doc_type_mapping" Type="Self.doc_type_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_doc_type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doc_type_mapping">
+        <PropertyRef Name="ob_doc_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_dip_batch_dip_batch_id">
+    <End Role="dip_batch" Type="Self.dip_batch" Multiplicity="0..1" />
+    <End Role="document" Type="Self.document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dip_batch">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="document">
+        <PropertyRef Name="dip_batch_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="0..1" />
+    <End Role="document" Type="Self.document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="document">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_file_type_file_type_id">
+    <End Role="file_type" Type="Self.file_type" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="file_type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="file_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_legacy_file_info_file_file_id">
+    <End Role="file" Type="Self.file" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="legacy_file_info" Type="Self.legacy_file_info" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="file">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="legacy_file_info">
+        <PropertyRef Name="file_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_metadata_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="metadata" Type="Self.metadata" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="metadata">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_metadata_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="1" />
+    <End Role="metadata" Type="Self.metadata" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="metadata">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_note_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="note" Type="Self.note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="note">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_document_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="1" />
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_document">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_file_info_file_file_id">
+    <End Role="file" Type="Self.file" Multiplicity="1" />
+    <End Role="onbase_file_info" Type="Self.onbase_file_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="file">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_file_info">
+        <PropertyRef Name="file_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_file_info_onbase_document_onbase_doc_id">
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="onbase_file_info" Type="Self.onbase_file_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_file_info">
+        <PropertyRef Name="onbase_doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_note_onbase_document_onbase_doc_id">
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="onbase_note" Type="Self.onbase_note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_note">
+        <PropertyRef Name="onbase_doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CcsServerModelStoreContainer">
+    <EntitySet Name="dataset" EntityType="Self.dataset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dataset_field" EntityType="Self.dataset_field" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dataset_mapset" EntityType="Self.dataset_mapset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dataset_record" EntityType="Self.dataset_record" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dip_batch" EntityType="Self.dip_batch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="diskgroup" EntityType="Self.diskgroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="doc_type_mapping" EntityType="Self.doc_type_mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="document" EntityType="Self.document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="field" EntityType="Self.field" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="file" EntityType="Self.file" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="file_type" EntityType="Self.file_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="key_type_mapset" EntityType="Self.key_type_mapset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="legacy_file_info" EntityType="Self.legacy_file_info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="max_num_keys" EntityType="Self.max_num_keys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="metadata" EntityType="Self.metadata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="note" EntityType="Self.note" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="onbase_doc_type" EntityType="Self.onbase_doc_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="onbase_document" EntityType="Self.onbase_document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="onbase_file_info" EntityType="Self.onbase_file_info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="onbase_key_type" EntityType="Self.onbase_key_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="onbase_note" EntityType="Self.onbase_note" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="snapshot" EntityType="Self.snapshot" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dataset_field_dataset_dataset_id" Association="Self.FK_dataset_field_dataset_dataset_id">
+      <End Role="dataset" EntitySet="dataset" />
+      <End Role="dataset_field" EntitySet="dataset_field" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_mapset_dataset_dataset_id" Association="Self.FK_dataset_mapset_dataset_dataset_id">
+      <End Role="dataset" EntitySet="dataset" />
+      <End Role="dataset_mapset" EntitySet="dataset_mapset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_mapset_key_type_mapset_key_type_mapset_id" Association="Self.FK_dataset_mapset_key_type_mapset_key_type_mapset_id">
+      <End Role="key_type_mapset" EntitySet="key_type_mapset" />
+      <End Role="dataset_mapset" EntitySet="dataset_mapset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_record_dataset_dataset_id" Association="Self.FK_dataset_record_dataset_dataset_id">
+      <End Role="dataset" EntitySet="dataset" />
+      <End Role="dataset_record" EntitySet="dataset_record" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_record_document_doc_id" Association="Self.FK_dataset_record_document_doc_id">
+      <End Role="document" EntitySet="document" />
+      <End Role="dataset_record" EntitySet="dataset_record" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doc_type_mapping_key_type_mapset_key_type_mapset_id" Association="Self.FK_doc_type_mapping_key_type_mapset_key_type_mapset_id">
+      <End Role="key_type_mapset" EntitySet="key_type_mapset" />
+      <End Role="doc_type_mapping" EntitySet="doc_type_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id" Association="Self.FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id">
+      <End Role="onbase_doc_type" EntitySet="onbase_doc_type" />
+      <End Role="doc_type_mapping" EntitySet="doc_type_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_dip_batch_dip_batch_id" Association="Self.FK_document_dip_batch_dip_batch_id">
+      <End Role="dip_batch" EntitySet="dip_batch" />
+      <End Role="document" EntitySet="document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_snapshot_snapshot_id" Association="Self.FK_document_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshot" />
+      <End Role="document" EntitySet="document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_document_doc_id" Association="Self.FK_file_document_doc_id">
+      <End Role="document" EntitySet="document" />
+      <End Role="file" EntitySet="file" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_file_type_file_type_id" Association="Self.FK_file_file_type_file_type_id">
+      <End Role="file_type" EntitySet="file_type" />
+      <End Role="file" EntitySet="file" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_snapshot_snapshot_id" Association="Self.FK_file_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshot" />
+      <End Role="file" EntitySet="file" />
+    </AssociationSet>
+    <AssociationSet Name="FK_legacy_file_info_file_file_id" Association="Self.FK_legacy_file_info_file_file_id">
+      <End Role="file" EntitySet="file" />
+      <End Role="legacy_file_info" EntitySet="legacy_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_metadata_document_doc_id" Association="Self.FK_metadata_document_doc_id">
+      <End Role="document" EntitySet="document" />
+      <End Role="metadata" EntitySet="metadata" />
+    </AssociationSet>
+    <AssociationSet Name="FK_metadata_snapshot_snapshot_id" Association="Self.FK_metadata_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshot" />
+      <End Role="metadata" EntitySet="metadata" />
+    </AssociationSet>
+    <AssociationSet Name="FK_note_document_doc_id" Association="Self.FK_note_document_doc_id">
+      <End Role="document" EntitySet="document" />
+      <End Role="note" EntitySet="note" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_document_document_doc_id" Association="Self.FK_onbase_document_document_doc_id">
+      <End Role="document" EntitySet="document" />
+      <End Role="onbase_document" EntitySet="onbase_document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_file_info_file_file_id" Association="Self.FK_onbase_file_info_file_file_id">
+      <End Role="file" EntitySet="file" />
+      <End Role="onbase_file_info" EntitySet="onbase_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_file_info_onbase_document_onbase_doc_id" Association="Self.FK_onbase_file_info_onbase_document_onbase_doc_id">
+      <End Role="onbase_document" EntitySet="onbase_document" />
+      <End Role="onbase_file_info" EntitySet="onbase_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_note_onbase_document_onbase_doc_id" Association="Self.FK_onbase_note_onbase_document_onbase_doc_id">
+      <End Role="onbase_document" EntitySet="onbase_document" />
+      <End Role="onbase_note" EntitySet="onbase_note" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

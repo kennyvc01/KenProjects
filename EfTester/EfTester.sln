@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.57
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfTester", "EfTester\EfTester.csproj", "{D2DDEBDC-61D1-4DC9-ADEE-2686E2332FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CcsEnityFramework", "CcsEnityFramework\CcsEnityFramework.csproj", "{161A6A78-9D87-4282-A91B-4F1D8CC8CFC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2DDEBDC-61D1-4DC9-ADEE-2686E2332FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DDEBDC-61D1-4DC9-ADEE-2686E2332FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DDEBDC-61D1-4DC9-ADEE-2686E2332FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DDEBDC-61D1-4DC9-ADEE-2686E2332FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161A6A78-9D87-4282-A91B-4F1D8CC8CFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161A6A78-9D87-4282-A91B-4F1D8CC8CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161A6A78-9D87-4282-A91B-4F1D8CC8CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161A6A78-9D87-4282-A91B-4F1D8CC8CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

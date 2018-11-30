@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CcsServerModelStoreContainer" CdmEntityContainer="CcsServerEntities">
+    <EntitySetMapping Name="datasets">
+      <EntityTypeMapping TypeName="CcsServerModel.dataset">
+        <MappingFragment StoreEntitySet="dataset">
+          <ScalarProperty Name="dataset_id" ColumnName="dataset_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dataset_field">
+      <EntityTypeMapping TypeName="CcsServerModel.dataset_field">
+        <MappingFragment StoreEntitySet="dataset_field">
+          <ScalarProperty Name="dataset_field_id" ColumnName="dataset_field_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="dataset_id" ColumnName="dataset_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dataset_mapset">
+      <EntityTypeMapping TypeName="CcsServerModel.dataset_mapset">
+        <MappingFragment StoreEntitySet="dataset_mapset">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="key_type_mapset_id" ColumnName="key_type_mapset_id" />
+          <ScalarProperty Name="dataset_id" ColumnName="dataset_id" />
+          <ScalarProperty Name="col_000" ColumnName="col_000" />
+          <ScalarProperty Name="col_001" ColumnName="col_001" />
+          <ScalarProperty Name="col_002" ColumnName="col_002" />
+          <ScalarProperty Name="col_003" ColumnName="col_003" />
+          <ScalarProperty Name="col_004" ColumnName="col_004" />
+          <ScalarProperty Name="col_005" ColumnName="col_005" />
+          <ScalarProperty Name="col_006" ColumnName="col_006" />
+          <ScalarProperty Name="col_007" ColumnName="col_007" />
+          <ScalarProperty Name="col_008" ColumnName="col_008" />
+          <ScalarProperty Name="col_009" ColumnName="col_009" />
+          <ScalarProperty Name="col_010" ColumnName="col_010" />
+          <ScalarProperty Name="col_011" ColumnName="col_011" />
+          <ScalarProperty Name="col_012" ColumnName="col_012" />
+          <ScalarProperty Name="col_013" ColumnName="col_013" />
+          <ScalarProperty Name="col_014" ColumnName="col_014" />
+          <ScalarProperty Name="col_015" ColumnName="col_015" />
+          <ScalarProperty Name="col_016" ColumnName="col_016" />
+          <ScalarProperty Name="col_017" ColumnName="col_017" />
+          <ScalarProperty Name="col_018" ColumnName="col_018" />
+          <ScalarProperty Name="col_019" ColumnName="col_019" />
+          <ScalarProperty Name="col_020" ColumnName="col_020" />
+          <ScalarProperty Name="col_021" ColumnName="col_021" />
+          <ScalarProperty Name="col_022" ColumnName="col_022" />
+          <ScalarProperty Name="col_023" ColumnName="col_023" />
+          <ScalarProperty Name="col_024" ColumnName="col_024" />
+          <ScalarProperty Name="col_025" ColumnName="col_025" />
+          <ScalarProperty Name="col_026" ColumnName="col_026" />
+          <ScalarProperty Name="col_027" ColumnName="col_027" />
+          <ScalarProperty Name="col_028" ColumnName="col_028" />
+          <ScalarProperty Name="col_029" ColumnName="col_029" />
+          <ScalarProperty Name="col_030" ColumnName="col_030" />
+          <ScalarProperty Name="col_031" ColumnName="col_031" />
+          <ScalarProperty Name="col_032" ColumnName="col_032" />
+          <ScalarProperty Name="col_033" ColumnName="col_033" />
+          <ScalarProperty Name="col_034" ColumnName="col_034" />
+          <ScalarProperty Name="col_035" ColumnName="col_035" />
+          <ScalarProperty Name="col_036" ColumnName="col_036" />
+          <ScalarProperty Name="col_037" ColumnName="col_037" />
+          <ScalarProperty Name="col_038" ColumnName="col_038" />
+          <ScalarProperty Name="col_039" ColumnName="col_039" />
+          <ScalarProperty Name="col_040" ColumnName="col_040" />
+          <ScalarProperty Name="col_041" ColumnName="col_041" />
+          <ScalarProperty Name="col_042" ColumnName="col_042" />
+          <ScalarProperty Name="col_043" ColumnName="col_043" />
+          <ScalarProperty Name="col_044" ColumnName="col_044" />
+          <ScalarProperty Name="col_045" ColumnName="col_045" />
+          <ScalarProperty Name="col_046" ColumnName="col_046" />
+          <ScalarProperty Name="col_047" ColumnName="col_047" />
+          <ScalarProperty Name="col_048" ColumnName="col_048" />
+          <ScalarProperty Name="col_049" ColumnName="col_049" />
+          <ScalarProperty Name="col_050" ColumnName="col_050" />
+          <ScalarProperty Name="col_051" ColumnName="col_051" />
+          <ScalarProperty Name="col_052" ColumnName="col_052" />
+          <ScalarProperty Name="col_053" ColumnName="col_053" />
+          <ScalarProperty Name="col_054" ColumnName="col_054" />
+          <ScalarProperty Name="col_055" ColumnName="col_055" />
+          <ScalarProperty Name="col_056" ColumnName="col_056" />
+          <ScalarProperty Name="col_057" ColumnName="col_057" />
+          <ScalarProperty Name="col_058" ColumnName="col_058" />
+          <ScalarProperty Name="col_059" ColumnName="col_059" />
+          <ScalarProperty Name="col_060" ColumnName="col_060" />
+          <ScalarProperty Name="col_061" ColumnName="col_061" />
+          <ScalarProperty Name="col_062" ColumnName="col_062" />
+          <ScalarProperty Name="col_063" ColumnName="col_063" />
+          <ScalarProperty Name="col_064" ColumnName="col_064" />
+          <ScalarProperty Name="col_065" ColumnName="col_065" />
+          <ScalarProperty Name="col_066" ColumnName="col_066" />
+          <ScalarProperty Name="col_067" ColumnName="col_067" />
+          <ScalarProperty Name="col_068" ColumnName="col_068" />
+          <ScalarProperty Name="col_069" ColumnName="col_069" />
+          <ScalarProperty Name="col_070" ColumnName="col_070" />
+          <ScalarProperty Name="col_071" ColumnName="col_071" />
+          <ScalarProperty Name="col_072" ColumnName="col_072" />
+          <ScalarProperty Name="col_073" ColumnName="col_073" />
+          <ScalarProperty Name="col_074" ColumnName="col_074" />
+          <ScalarProperty Name="col_075" ColumnName="col_075" />
+          <ScalarProperty Name="col_076" ColumnName="col_076" />
+          <ScalarProperty Name="col_077" ColumnName="col_077" />
+          <ScalarProperty Name="col_078" ColumnName="col_078" />
+          <ScalarProperty Name="col_079" ColumnName="col_079" />
+          <ScalarProperty Name="col_080" ColumnName="col_080" />
+          <ScalarProperty Name="col_081" ColumnName="col_081" />
+          <ScalarProperty Name="col_082" ColumnName="col_082" />
+          <ScalarProperty Name="col_083" ColumnName="col_083" />
+          <ScalarProperty Name="col_084" ColumnName="col_084" />
+          <ScalarProperty Name="col_085" ColumnName="col_085" />
+          <ScalarProperty Name="col_086" ColumnName="col_086" />
+          <ScalarProperty Name="col_087" ColumnName="col_087" />
+          <ScalarProperty Name="col_088" ColumnName="col_088" />
+          <ScalarProperty Name="col_089" ColumnName="col_089" />
+          <ScalarProperty Name="col_090" ColumnName="col_090" />
+          <ScalarProperty Name="col_091" ColumnName="col_091" />
+          <ScalarProperty Name="col_092" ColumnName="col_092" />
+          <ScalarProperty Name="col_093" ColumnName="col_093" />
+          <ScalarProperty Name="col_094" ColumnName="col_094" />
+          <ScalarProperty Name="col_095" ColumnName="col_095" />
+          <ScalarProperty Name="col_096" ColumnName="col_096" />
+          <ScalarProperty Name="col_097" ColumnName="col_097" />
+          <ScalarProperty Name="col_098" ColumnName="col_098" />
+          <ScalarProperty Name="col_099" ColumnName="col_099" />
+          <ScalarProperty Name="col_100" ColumnName="col_100" />
+          <ScalarProperty Name="col_101" ColumnName="col_101" />
+          <ScalarProperty Name="col_102" ColumnName="col_102" />
+          <ScalarProperty Name="col_103" ColumnName="col_103" />
+          <ScalarProperty Name="col_104" ColumnName="col_104" />
+          <ScalarProperty Name="col_105" ColumnName="col_105" />
+          <ScalarProperty Name="col_106" ColumnName="col_106" />
+          <ScalarProperty Name="col_107" ColumnName="col_107" />
+          <ScalarProperty Name="col_108" ColumnName="col_108" />
+          <ScalarProperty Name="col_109" ColumnName="col_109" />
+          <ScalarProperty Name="col_110" ColumnName="col_110" />
+          <ScalarProperty Name="col_111" ColumnName="col_111" />
+          <ScalarProperty Name="col_112" ColumnName="col_112" />
+          <ScalarProperty Name="col_113" ColumnName="col_113" />
+          <ScalarProperty Name="col_114" ColumnName="col_114" />
+          <ScalarProperty Name="col_115" ColumnName="col_115" />
+          <ScalarProperty Name="col_116" ColumnName="col_116" />
+          <ScalarProperty Name="col_117" ColumnName="col_117" />
+          <ScalarProperty Name="col_118" ColumnName="col_118" />
+          <ScalarProperty Name="col_119" ColumnName="col_119" />
+          <ScalarProperty Name="col_120" ColumnName="col_120" />
+          <ScalarProperty Name="col_121" ColumnName="col_121" />
+          <ScalarProperty Name="col_122" ColumnName="col_122" />
+          <ScalarProperty Name="col_123" ColumnName="col_123" />
+          <ScalarProperty Name="col_124" ColumnName="col_124" />
+          <ScalarProperty Name="col_125" ColumnName="col_125" />
+          <ScalarProperty Name="col_126" ColumnName="col_126" />
+          <ScalarProperty Name="col_127" ColumnName="col_127" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dataset_record">
+      <EntityTypeMapping TypeName="CcsServerModel.dataset_record">
+        <MappingFragment StoreEntitySet="dataset_record">
+          <ScalarProperty Name="dataset_record_id" ColumnName="dataset_record_id" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="dataset_id" ColumnName="dataset_id" />
+          <ScalarProperty Name="col_000" ColumnName="col_000" />
+          <ScalarProperty Name="col_001" ColumnName="col_001" />
+          <ScalarProperty Name="col_002" ColumnName="col_002" />
+          <ScalarProperty Name="col_003" ColumnName="col_003" />
+          <ScalarProperty Name="col_004" ColumnName="col_004" />
+          <ScalarProperty Name="col_005" ColumnName="col_005" />
+          <ScalarProperty Name="col_006" ColumnName="col_006" />
+          <ScalarProperty Name="col_007" ColumnName="col_007" />
+          <ScalarProperty Name="col_008" ColumnName="col_008" />
+          <ScalarProperty Name="col_009" ColumnName="col_009" />
+          <ScalarProperty Name="col_010" ColumnName="col_010" />
+          <ScalarProperty Name="col_011" ColumnName="col_011" />
+          <ScalarProperty Name="col_012" ColumnName="col_012" />
+          <ScalarProperty Name="col_013" ColumnName="col_013" />
+          <ScalarProperty Name="col_014" ColumnName="col_014" />
+          <ScalarProperty Name="col_015" ColumnName="col_015" />
+          <ScalarProperty Name="col_016" ColumnName="col_016" />
+          <ScalarProperty Name="col_017" ColumnName="col_017" />
+          <ScalarProperty Name="col_018" ColumnName="col_018" />
+          <ScalarProperty Name="col_019" ColumnName="col_019" />
+          <ScalarProperty Name="col_020" ColumnName="col_020" />
+          <ScalarProperty Name="col_021" ColumnName="col_021" />
+          <ScalarProperty Name="col_022" ColumnName="col_022" />
+          <ScalarProperty Name="col_023" ColumnName="col_023" />
+          <ScalarProperty Name="col_024" ColumnName="col_024" />
+          <ScalarProperty Name="col_025" ColumnName="col_025" />
+          <ScalarProperty Name="col_026" ColumnName="col_026" />
+          <ScalarProperty Name="col_027" ColumnName="col_027" />
+          <ScalarProperty Name="col_028" ColumnName="col_028" />
+          <ScalarProperty Name="col_029" ColumnName="col_029" />
+          <ScalarProperty Name="col_030" ColumnName="col_030" />
+          <ScalarProperty Name="col_031" ColumnName="col_031" />
+          <ScalarProperty Name="col_032" ColumnName="col_032" />
+          <ScalarProperty Name="col_033" ColumnName="col_033" />
+          <ScalarProperty Name="col_034" ColumnName="col_034" />
+          <ScalarProperty Name="col_035" ColumnName="col_035" />
+          <ScalarProperty Name="col_036" ColumnName="col_036" />
+          <ScalarProperty Name="col_037" ColumnName="col_037" />
+          <ScalarProperty Name="col_038" ColumnName="col_038" />
+          <ScalarProperty Name="col_039" ColumnName="col_039" />
+          <ScalarProperty Name="col_040" ColumnName="col_040" />
+          <ScalarProperty Name="col_041" ColumnName="col_041" />
+          <ScalarProperty Name="col_042" ColumnName="col_042" />
+          <ScalarProperty Name="col_043" ColumnName="col_043" />
+          <ScalarProperty Name="col_044" ColumnName="col_044" />
+          <ScalarProperty Name="col_045" ColumnName="col_045" />
+          <ScalarProperty Name="col_046" ColumnName="col_046" />
+          <ScalarProperty Name="col_047" ColumnName="col_047" />
+          <ScalarProperty Name="col_048" ColumnName="col_048" />
+          <ScalarProperty Name="col_049" ColumnName="col_049" />
+          <ScalarProperty Name="col_050" ColumnName="col_050" />
+          <ScalarProperty Name="col_051" ColumnName="col_051" />
+          <ScalarProperty Name="col_052" ColumnName="col_052" />
+          <ScalarProperty Name="col_053" ColumnName="col_053" />
+          <ScalarProperty Name="col_054" ColumnName="col_054" />
+          <ScalarProperty Name="col_055" ColumnName="col_055" />
+          <ScalarProperty Name="col_056" ColumnName="col_056" />
+          <ScalarProperty Name="col_057" ColumnName="col_057" />
+          <ScalarProperty Name="col_058" ColumnName="col_058" />
+          <ScalarProperty Name="col_059" ColumnName="col_059" />
+          <ScalarProperty Name="col_060" ColumnName="col_060" />
+          <ScalarProperty Name="col_061" ColumnName="col_061" />
+          <ScalarProperty Name="col_062" ColumnName="col_062" />
+          <ScalarProperty Name="col_063" ColumnName="col_063" />
+          <ScalarProperty Name="col_064" ColumnName="col_064" />
+          <ScalarProperty Name="col_065" ColumnName="col_065" />
+          <ScalarProperty Name="col_066" ColumnName="col_066" />
+          <ScalarProperty Name="col_067" ColumnName="col_067" />
+          <ScalarProperty Name="col_068" ColumnName="col_068" />
+          <ScalarProperty Name="col_069" ColumnName="col_069" />
+          <ScalarProperty Name="col_070" ColumnName="col_070" />
+          <ScalarProperty Name="col_071" ColumnName="col_071" />
+          <ScalarProperty Name="col_072" ColumnName="col_072" />
+          <ScalarProperty Name="col_073" ColumnName="col_073" />
+          <ScalarProperty Name="col_074" ColumnName="col_074" />
+          <ScalarProperty Name="col_075" ColumnName="col_075" />
+          <ScalarProperty Name="col_076" ColumnName="col_076" />
+          <ScalarProperty Name="col_077" ColumnName="col_077" />
+          <ScalarProperty Name="col_078" ColumnName="col_078" />
+          <ScalarProperty Name="col_079" ColumnName="col_079" />
+          <ScalarProperty Name="col_080" ColumnName="col_080" />
+          <ScalarProperty Name="col_081" ColumnName="col_081" />
+          <ScalarProperty Name="col_082" ColumnName="col_082" />
+          <ScalarProperty Name="col_083" ColumnName="col_083" />
+          <ScalarProperty Name="col_084" ColumnName="col_084" />
+          <ScalarProperty Name="col_085" ColumnName="col_085" />
+          <ScalarProperty Name="col_086" ColumnName="col_086" />
+          <ScalarProperty Name="col_087" ColumnName="col_087" />
+          <ScalarProperty Name="col_088" ColumnName="col_088" />
+          <ScalarProperty Name="col_089" ColumnName="col_089" />
+          <ScalarProperty Name="col_090" ColumnName="col_090" />
+          <ScalarProperty Name="col_091" ColumnName="col_091" />
+          <ScalarProperty Name="col_092" ColumnName="col_092" />
+          <ScalarProperty Name="col_093" ColumnName="col_093" />
+          <ScalarProperty Name="col_094" ColumnName="col_094" />
+          <ScalarProperty Name="col_095" ColumnName="col_095" />
+          <ScalarProperty Name="col_096" ColumnName="col_096" />
+          <ScalarProperty Name="col_097" ColumnName="col_097" />
+          <ScalarProperty Name="col_098" ColumnName="col_098" />
+          <ScalarProperty Name="col_099" ColumnName="col_099" />
+          <ScalarProperty Name="col_100" ColumnName="col_100" />
+          <ScalarProperty Name="col_101" ColumnName="col_101" />
+          <ScalarProperty Name="col_102" ColumnName="col_102" />
+          <ScalarProperty Name="col_103" ColumnName="col_103" />
+          <ScalarProperty Name="col_104" ColumnName="col_104" />
+          <ScalarProperty Name="col_105" ColumnName="col_105" />
+          <ScalarProperty Name="col_106" ColumnName="col_106" />
+          <ScalarProperty Name="col_107" ColumnName="col_107" />
+          <ScalarProperty Name="col_108" ColumnName="col_108" />
+          <ScalarProperty Name="col_109" ColumnName="col_109" />
+          <ScalarProperty Name="col_110" ColumnName="col_110" />
+          <ScalarProperty Name="col_111" ColumnName="col_111" />
+          <ScalarProperty Name="col_112" ColumnName="col_112" />
+          <ScalarProperty Name="col_113" ColumnName="col_113" />
+          <ScalarProperty Name="col_114" ColumnName="col_114" />
+          <ScalarProperty Name="col_115" ColumnName="col_115" />
+          <ScalarProperty Name="col_116" ColumnName="col_116" />
+          <ScalarProperty Name="col_117" ColumnName="col_117" />
+          <ScalarProperty Name="col_118" ColumnName="col_118" />
+          <ScalarProperty Name="col_119" ColumnName="col_119" />
+          <ScalarProperty Name="col_120" ColumnName="col_120" />
+          <ScalarProperty Name="col_121" ColumnName="col_121" />
+          <ScalarProperty Name="col_122" ColumnName="col_122" />
+          <ScalarProperty Name="col_123" ColumnName="col_123" />
+          <ScalarProperty Name="col_124" ColumnName="col_124" />
+          <ScalarProperty Name="col_125" ColumnName="col_125" />
+          <ScalarProperty Name="col_126" ColumnName="col_126" />
+          <ScalarProperty Name="col_127" ColumnName="col_127" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dip_batch">
+      <EntityTypeMapping TypeName="CcsServerModel.dip_batch">
+        <MappingFragment StoreEntitySet="dip_batch">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="doc_count" ColumnName="doc_count" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="flags" ColumnName="flags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="diskgroups">
+      <EntityTypeMapping TypeName="CcsServerModel.diskgroup">
+        <MappingFragment StoreEntitySet="diskgroup">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="flags" ColumnName="flags" />
+          <ScalarProperty Name="max_fldr_files" ColumnName="max_fldr_files" />
+          <ScalarProperty Name="max_vol_bytes" ColumnName="max_vol_bytes" />
+          <ScalarProperty Name="next_vol" ColumnName="next_vol" />
+          <ScalarProperty Name="root_path" ColumnName="root_path" />
+          <ScalarProperty Name="default_volume_flags" ColumnName="default_volume_flags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doc_type_mapping">
+      <EntityTypeMapping TypeName="CcsServerModel.doc_type_mapping">
+        <MappingFragment StoreEntitySet="doc_type_mapping">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lookup_000" ColumnName="lookup_000" />
+          <ScalarProperty Name="lookup_001" ColumnName="lookup_001" />
+          <ScalarProperty Name="lookup_002" ColumnName="lookup_002" />
+          <ScalarProperty Name="lookup_003" ColumnName="lookup_003" />
+          <ScalarProperty Name="lookup_004" ColumnName="lookup_004" />
+          <ScalarProperty Name="ob_doc_reason_lookup" ColumnName="ob_doc_reason_lookup" />
+          <ScalarProperty Name="key_type_mapset_id" ColumnName="key_type_mapset_id" />
+          <ScalarProperty Name="ob_doc_type_id" ColumnName="ob_doc_type_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="documents">
+      <EntityTypeMapping TypeName="CcsServerModel.document">
+        <MappingFragment StoreEntitySet="document">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="legacy_id" ColumnName="legacy_id" />
+          <ScalarProperty Name="phase" ColumnName="phase" />
+          <ScalarProperty Name="exclusion_code" ColumnName="exclusion_code" />
+          <ScalarProperty Name="exception_code" ColumnName="exception_code" />
+          <ScalarProperty Name="dip_batch_id" ColumnName="dip_batch_id" />
+          <ScalarProperty Name="docset_local_id" ColumnName="docset_local_id" />
+          <ScalarProperty Name="docset_remote_id" ColumnName="docset_remote_id" />
+          <ScalarProperty Name="inventory_history_id" ColumnName="inventory_history_id" />
+          <ScalarProperty Name="snapshot_id" ColumnName="snapshot_id" />
+          <ScalarProperty Name="legacy_source" ColumnName="legacy_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fields">
+      <EntityTypeMapping TypeName="CcsServerModel.field">
+        <MappingFragment StoreEntitySet="field">
+          <ScalarProperty Name="field_id" ColumnName="field_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="position" ColumnName="position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="files">
+      <EntityTypeMapping TypeName="CcsServerModel.file">
+        <MappingFragment StoreEntitySet="file">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="volume_id" ColumnName="volume_id" />
+          <ScalarProperty Name="relative_path" ColumnName="relative_path" />
+          <ScalarProperty Name="file_size" ColumnName="file_size" />
+          <ScalarProperty Name="file_type_id" ColumnName="file_type_id" />
+          <ScalarProperty Name="sb_file_type" ColumnName="sb_file_type" />
+          <ScalarProperty Name="snapshot_id" ColumnName="snapshot_id" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="page_count" ColumnName="page_count" />
+          <ScalarProperty Name="x_dpi" ColumnName="x_dpi" />
+          <ScalarProperty Name="y_dpi" ColumnName="y_dpi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="file_type">
+      <EntityTypeMapping TypeName="CcsServerModel.file_type">
+        <MappingFragment StoreEntitySet="file_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="file_type1" ColumnName="file_type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="hsi_filetypenum" ColumnName="hsi_filetypenum" />
+          <ScalarProperty Name="sb_file_type" ColumnName="sb_file_type" />
+          <ScalarProperty Name="file_extension" ColumnName="file_extension" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="key_type_mapset">
+      <EntityTypeMapping TypeName="CcsServerModel.key_type_mapset">
+        <MappingFragment StoreEntitySet="key_type_mapset">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="metadata_doc_date" ColumnName="metadata_doc_date" />
+          <ScalarProperty Name="col_000" ColumnName="col_000" />
+          <ScalarProperty Name="col_001" ColumnName="col_001" />
+          <ScalarProperty Name="col_002" ColumnName="col_002" />
+          <ScalarProperty Name="col_003" ColumnName="col_003" />
+          <ScalarProperty Name="col_004" ColumnName="col_004" />
+          <ScalarProperty Name="col_005" ColumnName="col_005" />
+          <ScalarProperty Name="col_006" ColumnName="col_006" />
+          <ScalarProperty Name="col_007" ColumnName="col_007" />
+          <ScalarProperty Name="col_008" ColumnName="col_008" />
+          <ScalarProperty Name="col_009" ColumnName="col_009" />
+          <ScalarProperty Name="col_010" ColumnName="col_010" />
+          <ScalarProperty Name="col_011" ColumnName="col_011" />
+          <ScalarProperty Name="col_012" ColumnName="col_012" />
+          <ScalarProperty Name="col_013" ColumnName="col_013" />
+          <ScalarProperty Name="col_014" ColumnName="col_014" />
+          <ScalarProperty Name="col_015" ColumnName="col_015" />
+          <ScalarProperty Name="col_016" ColumnName="col_016" />
+          <ScalarProperty Name="col_017" ColumnName="col_017" />
+          <ScalarProperty Name="col_018" ColumnName="col_018" />
+          <ScalarProperty Name="col_019" ColumnName="col_019" />
+          <ScalarProperty Name="col_020" ColumnName="col_020" />
+          <ScalarProperty Name="col_021" ColumnName="col_021" />
+          <ScalarProperty Name="col_022" ColumnName="col_022" />
+          <ScalarProperty Name="col_023" ColumnName="col_023" />
+          <ScalarProperty Name="col_024" ColumnName="col_024" />
+          <ScalarProperty Name="col_025" ColumnName="col_025" />
+          <ScalarProperty Name="col_026" ColumnName="col_026" />
+          <ScalarProperty Name="col_027" ColumnName="col_027" />
+          <ScalarProperty Name="col_028" ColumnName="col_028" />
+          <ScalarProperty Name="col_029" ColumnName="col_029" />
+          <ScalarProperty Name="col_030" ColumnName="col_030" />
+          <ScalarProperty Name="col_031" ColumnName="col_031" />
+          <ScalarProperty Name="col_032" ColumnName="col_032" />
+          <ScalarProperty Name="col_033" ColumnName="col_033" />
+          <ScalarProperty Name="col_034" ColumnName="col_034" />
+          <ScalarProperty Name="col_035" ColumnName="col_035" />
+          <ScalarProperty Name="col_036" ColumnName="col_036" />
+          <ScalarProperty Name="col_037" ColumnName="col_037" />
+          <ScalarProperty Name="col_038" ColumnName="col_038" />
+          <ScalarProperty Name="col_039" ColumnName="col_039" />
+          <ScalarProperty Name="col_040" ColumnName="col_040" />
+          <ScalarProperty Name="col_041" ColumnName="col_041" />
+          <ScalarProperty Name="col_042" ColumnName="col_042" />
+          <ScalarProperty Name="col_043" ColumnName="col_043" />
+          <ScalarProperty Name="col_044" ColumnName="col_044" />
+          <ScalarProperty Name="col_045" ColumnName="col_045" />
+          <ScalarProperty Name="col_046" ColumnName="col_046" />
+          <ScalarProperty Name="col_047" ColumnName="col_047" />
+          <ScalarProperty Name="col_048" ColumnName="col_048" />
+          <ScalarProperty Name="col_049" ColumnName="col_049" />
+          <ScalarProperty Name="col_050" ColumnName="col_050" />
+          <ScalarProperty Name="col_051" ColumnName="col_051" />
+          <ScalarProperty Name="col_052" ColumnName="col_052" />
+          <ScalarProperty Name="col_053" ColumnName="col_053" />
+          <ScalarProperty Name="col_054" ColumnName="col_054" />
+          <ScalarProperty Name="col_055" ColumnName="col_055" />
+          <ScalarProperty Name="col_056" ColumnName="col_056" />
+          <ScalarProperty Name="col_057" ColumnName="col_057" />
+          <ScalarProperty Name="col_058" ColumnName="col_058" />
+          <ScalarProperty Name="col_059" ColumnName="col_059" />
+          <ScalarProperty Name="col_060" ColumnName="col_060" />
+          <ScalarProperty Name="col_061" ColumnName="col_061" />
+          <ScalarProperty Name="col_062" ColumnName="col_062" />
+          <ScalarProperty Name="col_063" ColumnName="col_063" />
+          <ScalarProperty Name="col_064" ColumnName="col_064" />
+          <ScalarProperty Name="col_065" ColumnName="col_065" />
+          <ScalarProperty Name="col_066" ColumnName="col_066" />
+          <ScalarProperty Name="col_067" ColumnName="col_067" />
+          <ScalarProperty Name="col_068" ColumnName="col_068" />
+          <ScalarProperty Name="col_069" ColumnName="col_069" />
+          <ScalarProperty Name="col_070" ColumnName="col_070" />
+          <ScalarProperty Name="col_071" ColumnName="col_071" />
+          <ScalarProperty Name="col_072" ColumnName="col_072" />
+          <ScalarProperty Name="col_073" ColumnName="col_073" />
+          <ScalarProperty Name="col_074" ColumnName="col_074" />
+          <ScalarProperty Name="col_075" ColumnName="col_075" />
+          <ScalarProperty Name="col_076" ColumnName="col_076" />
+          <ScalarProperty Name="col_077" ColumnName="col_077" />
+          <ScalarProperty Name="col_078" ColumnName="col_078" />
+          <ScalarProperty Name="col_079" ColumnName="col_079" />
+          <ScalarProperty Name="col_080" ColumnName="col_080" />
+          <ScalarProperty Name="col_081" ColumnName="col_081" />
+          <ScalarProperty Name="col_082" ColumnName="col_082" />
+          <ScalarProperty Name="col_083" ColumnName="col_083" />
+          <ScalarProperty Name="col_084" ColumnName="col_084" />
+          <ScalarProperty Name="col_085" ColumnName="col_085" />
+          <ScalarProperty Name="col_086" ColumnName="col_086" />
+          <ScalarProperty Name="col_087" ColumnName="col_087" />
+          <ScalarProperty Name="col_088" ColumnName="col_088" />
+          <ScalarProperty Name="col_089" ColumnName="col_089" />
+          <ScalarProperty Name="col_090" ColumnName="col_090" />
+          <ScalarProperty Name="col_091" ColumnName="col_091" />
+          <ScalarProperty Name="col_092" ColumnName="col_092" />
+          <ScalarProperty Name="col_093" ColumnName="col_093" />
+          <ScalarProperty Name="col_094" ColumnName="col_094" />
+          <ScalarProperty Name="col_095" ColumnName="col_095" />
+          <ScalarProperty Name="col_096" ColumnName="col_096" />
+          <ScalarProperty Name="col_097" ColumnName="col_097" />
+          <ScalarProperty Name="col_098" ColumnName="col_098" />
+          <ScalarProperty Name="col_099" ColumnName="col_099" />
+          <ScalarProperty Name="col_100" ColumnName="col_100" />
+          <ScalarProperty Name="col_101" ColumnName="col_101" />
+          <ScalarProperty Name="col_102" ColumnName="col_102" />
+          <ScalarProperty Name="col_103" ColumnName="col_103" />
+          <ScalarProperty Name="col_104" ColumnName="col_104" />
+          <ScalarProperty Name="col_105" ColumnName="col_105" />
+          <ScalarProperty Name="col_106" ColumnName="col_106" />
+          <ScalarProperty Name="col_107" ColumnName="col_107" />
+          <ScalarProperty Name="col_108" ColumnName="col_108" />
+          <ScalarProperty Name="col_109" ColumnName="col_109" />
+          <ScalarProperty Name="col_110" ColumnName="col_110" />
+          <ScalarProperty Name="col_111" ColumnName="col_111" />
+          <ScalarProperty Name="col_112" ColumnName="col_112" />
+          <ScalarProperty Name="col_113" ColumnName="col_113" />
+          <ScalarProperty Name="col_114" ColumnName="col_114" />
+          <ScalarProperty Name="col_115" ColumnName="col_115" />
+          <ScalarProperty Name="col_116" ColumnName="col_116" />
+          <ScalarProperty Name="col_117" ColumnName="col_117" />
+          <ScalarProperty Name="col_118" ColumnName="col_118" />
+          <ScalarProperty Name="col_119" ColumnName="col_119" />
+          <ScalarProperty Name="col_120" ColumnName="col_120" />
+          <ScalarProperty Name="col_121" ColumnName="col_121" />
+          <ScalarProperty Name="col_122" ColumnName="col_122" />
+          <ScalarProperty Name="col_123" ColumnName="col_123" />
+          <ScalarProperty Name="col_124" ColumnName="col_124" />
+          <ScalarProperty Name="col_125" ColumnName="col_125" />
+          <ScalarProperty Name="col_126" ColumnName="col_126" />
+          <ScalarProperty Name="col_127" ColumnName="col_127" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="col_128" ColumnName="col_128" />
+          <ScalarProperty Name="col_129" ColumnName="col_129" />
+          <ScalarProperty Name="col_130" ColumnName="col_130" />
+          <ScalarProperty Name="col_131" ColumnName="col_131" />
+          <ScalarProperty Name="col_132" ColumnName="col_132" />
+          <ScalarProperty Name="col_133" ColumnName="col_133" />
+          <ScalarProperty Name="col_134" ColumnName="col_134" />
+          <ScalarProperty Name="col_135" ColumnName="col_135" />
+          <ScalarProperty Name="col_136" ColumnName="col_136" />
+          <ScalarProperty Name="col_137" ColumnName="col_137" />
+          <ScalarProperty Name="col_138" ColumnName="col_138" />
+          <ScalarProperty Name="col_139" ColumnName="col_139" />
+          <ScalarProperty Name="col_140" ColumnName="col_140" />
+          <ScalarProperty Name="col_141" ColumnName="col_141" />
+          <ScalarProperty Name="col_142" ColumnName="col_142" />
+          <ScalarProperty Name="col_143" ColumnName="col_143" />
+          <ScalarProperty Name="col_144" ColumnName="col_144" />
+          <ScalarProperty Name="col_145" ColumnName="col_145" />
+          <ScalarProperty Name="col_146" ColumnName="col_146" />
+          <ScalarProperty Name="col_147" ColumnName="col_147" />
+          <ScalarProperty Name="col_148" ColumnName="col_148" />
+          <ScalarProperty Name="col_149" ColumnName="col_149" />
+          <ScalarProperty Name="col_150" ColumnName="col_150" />
+          <ScalarProperty Name="col_151" ColumnName="col_151" />
+          <ScalarProperty Name="col_152" ColumnName="col_152" />
+          <ScalarProperty Name="col_153" ColumnName="col_153" />
+          <ScalarProperty Name="col_154" ColumnName="col_154" />
+          <ScalarProperty Name="col_155" ColumnName="col_155" />
+          <ScalarProperty Name="col_156" ColumnName="col_156" />
+          <ScalarProperty Name="col_157" ColumnName="col_157" />
+          <ScalarProperty Name="col_158" ColumnName="col_158" />
+          <ScalarProperty Name="col_159" ColumnName="col_159" />
+          <ScalarProperty Name="col_160" ColumnName="col_160" />
+          <ScalarProperty Name="col_161" ColumnName="col_161" />
+          <ScalarProperty Name="col_162" ColumnName="col_162" />
+          <ScalarProperty Name="col_163" ColumnName="col_163" />
+          <ScalarProperty Name="col_164" ColumnName="col_164" />
+          <ScalarProperty Name="col_165" ColumnName="col_165" />
+          <ScalarProperty Name="col_166" ColumnName="col_166" />
+          <ScalarProperty Name="col_167" ColumnName="col_167" />
+          <ScalarProperty Name="col_168" ColumnName="col_168" />
+          <ScalarProperty Name="col_169" ColumnName="col_169" />
+          <ScalarProperty Name="col_170" ColumnName="col_170" />
+          <ScalarProperty Name="col_171" ColumnName="col_171" />
+          <ScalarProperty Name="col_172" ColumnName="col_172" />
+          <ScalarProperty Name="col_173" ColumnName="col_173" />
+          <ScalarProperty Name="col_174" ColumnName="col_174" />
+          <ScalarProperty Name="col_175" ColumnName="col_175" />
+          <ScalarProperty Name="col_176" ColumnName="col_176" />
+          <ScalarProperty Name="col_177" ColumnName="col_177" />
+          <ScalarProperty Name="col_178" ColumnName="col_178" />
+          <ScalarProperty Name="col_179" ColumnName="col_179" />
+          <ScalarProperty Name="col_180" ColumnName="col_180" />
+          <ScalarProperty Name="col_181" ColumnName="col_181" />
+          <ScalarProperty Name="col_182" ColumnName="col_182" />
+          <ScalarProperty Name="col_183" ColumnName="col_183" />
+          <ScalarProperty Name="col_184" ColumnName="col_184" />
+          <ScalarProperty Name="col_185" ColumnName="col_185" />
+          <ScalarProperty Name="col_186" ColumnName="col_186" />
+          <ScalarProperty Name="col_187" ColumnName="col_187" />
+          <ScalarProperty Name="col_188" ColumnName="col_188" />
+          <ScalarProperty Name="col_189" ColumnName="col_189" />
+          <ScalarProperty Name="col_190" ColumnName="col_190" />
+          <ScalarProperty Name="col_191" ColumnName="col_191" />
+          <ScalarProperty Name="col_192" ColumnName="col_192" />
+          <ScalarProperty Name="col_193" ColumnName="col_193" />
+          <ScalarProperty Name="col_194" ColumnName="col_194" />
+          <ScalarProperty Name="col_195" ColumnName="col_195" />
+          <ScalarProperty Name="col_196" ColumnName="col_196" />
+          <ScalarProperty Name="col_197" ColumnName="col_197" />
+          <ScalarProperty Name="col_198" ColumnName="col_198" />
+          <ScalarProperty Name="col_199" ColumnName="col_199" />
+          <ScalarProperty Name="col_200" ColumnName="col_200" />
+          <ScalarProperty Name="col_201" ColumnName="col_201" />
+          <ScalarProperty Name="col_202" ColumnName="col_202" />
+          <ScalarProperty Name="col_203" ColumnName="col_203" />
+          <ScalarProperty Name="col_204" ColumnName="col_204" />
+          <ScalarProperty Name="col_205" ColumnName="col_205" />
+          <ScalarProperty Name="col_206" ColumnName="col_206" />
+          <ScalarProperty Name="col_207" ColumnName="col_207" />
+          <ScalarProperty Name="col_208" ColumnName="col_208" />
+          <ScalarProperty Name="col_209" ColumnName="col_209" />
+          <ScalarProperty Name="col_210" ColumnName="col_210" />
+          <ScalarProperty Name="col_211" ColumnName="col_211" />
+          <ScalarProperty Name="col_212" ColumnName="col_212" />
+          <ScalarProperty Name="col_213" ColumnName="col_213" />
+          <ScalarProperty Name="col_214" ColumnName="col_214" />
+          <ScalarProperty Name="col_215" ColumnName="col_215" />
+          <ScalarProperty Name="col_216" ColumnName="col_216" />
+          <ScalarProperty Name="col_217" ColumnName="col_217" />
+          <ScalarProperty Name="col_218" ColumnName="col_218" />
+          <ScalarProperty Name="col_219" ColumnName="col_219" />
+          <ScalarProperty Name="col_220" ColumnName="col_220" />
+          <ScalarProperty Name="col_221" ColumnName="col_221" />
+          <ScalarProperty Name="col_222" ColumnName="col_222" />
+          <ScalarProperty Name="col_223" ColumnName="col_223" />
+          <ScalarProperty Name="col_224" ColumnName="col_224" />
+          <ScalarProperty Name="col_225" ColumnName="col_225" />
+          <ScalarProperty Name="col_226" ColumnName="col_226" />
+          <ScalarProperty Name="col_227" ColumnName="col_227" />
+          <ScalarProperty Name="col_228" ColumnName="col_228" />
+          <ScalarProperty Name="col_229" ColumnName="col_229" />
+          <ScalarProperty Name="col_230" ColumnName="col_230" />
+          <ScalarProperty Name="col_231" ColumnName="col_231" />
+          <ScalarProperty Name="col_232" ColumnName="col_232" />
+          <ScalarProperty Name="col_233" ColumnName="col_233" />
+          <ScalarProperty Name="col_234" ColumnName="col_234" />
+          <ScalarProperty Name="col_235" ColumnName="col_235" />
+          <ScalarProperty Name="col_236" ColumnName="col_236" />
+          <ScalarProperty Name="col_237" ColumnName="col_237" />
+          <ScalarProperty Name="col_238" ColumnName="col_238" />
+          <ScalarProperty Name="col_239" ColumnName="col_239" />
+          <ScalarProperty Name="col_240" ColumnName="col_240" />
+          <ScalarProperty Name="col_241" ColumnName="col_241" />
+          <ScalarProperty Name="col_242" ColumnName="col_242" />
+          <ScalarProperty Name="col_243" ColumnName="col_243" />
+          <ScalarProperty Name="col_244" ColumnName="col_244" />
+          <ScalarProperty Name="col_245" ColumnName="col_245" />
+          <ScalarProperty Name="col_246" ColumnName="col_246" />
+          <ScalarProperty Name="col_247" ColumnName="col_247" />
+          <ScalarProperty Name="col_248" ColumnName="col_248" />
+          <ScalarProperty Name="col_249" ColumnName="col_249" />
+          <ScalarProperty Name="col_250" ColumnName="col_250" />
+          <ScalarProperty Name="col_251" ColumnName="col_251" />
+          <ScalarProperty Name="col_252" ColumnName="col_252" />
+          <ScalarProperty Name="col_253" ColumnName="col_253" />
+          <ScalarProperty Name="col_254" ColumnName="col_254" />
+          <ScalarProperty Name="col_255" ColumnName="col_255" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="legacy_file_info">
+      <EntityTypeMapping TypeName="CcsServerModel.legacy_file_info">
+        <MappingFragment StoreEntitySet="legacy_file_info">
+          <ScalarProperty Name="file_id" ColumnName="file_id" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="legacy_file_id" ColumnName="legacy_file_id" />
+          <ScalarProperty Name="legacy_file_type" ColumnName="legacy_file_type" />
+          <ScalarProperty Name="version_number" ColumnName="version_number" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="legacy_rotation" ColumnName="legacy_rotation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="max_num_keys">
+      <EntityTypeMapping TypeName="CcsServerModel.max_num_keys">
+        <MappingFragment StoreEntitySet="max_num_keys">
+          <ScalarProperty Name="num_key" ColumnName="num_key" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="next_id" ColumnName="next_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="metadatas">
+      <EntityTypeMapping TypeName="CcsServerModel.metadata">
+        <MappingFragment StoreEntitySet="metadata">
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="col_000" ColumnName="col_000" />
+          <ScalarProperty Name="col_001" ColumnName="col_001" />
+          <ScalarProperty Name="col_002" ColumnName="col_002" />
+          <ScalarProperty Name="col_003" ColumnName="col_003" />
+          <ScalarProperty Name="col_004" ColumnName="col_004" />
+          <ScalarProperty Name="col_005" ColumnName="col_005" />
+          <ScalarProperty Name="col_006" ColumnName="col_006" />
+          <ScalarProperty Name="col_007" ColumnName="col_007" />
+          <ScalarProperty Name="col_008" ColumnName="col_008" />
+          <ScalarProperty Name="col_009" ColumnName="col_009" />
+          <ScalarProperty Name="col_010" ColumnName="col_010" />
+          <ScalarProperty Name="col_011" ColumnName="col_011" />
+          <ScalarProperty Name="col_012" ColumnName="col_012" />
+          <ScalarProperty Name="col_013" ColumnName="col_013" />
+          <ScalarProperty Name="col_014" ColumnName="col_014" />
+          <ScalarProperty Name="col_015" ColumnName="col_015" />
+          <ScalarProperty Name="col_016" ColumnName="col_016" />
+          <ScalarProperty Name="col_017" ColumnName="col_017" />
+          <ScalarProperty Name="col_018" ColumnName="col_018" />
+          <ScalarProperty Name="col_019" ColumnName="col_019" />
+          <ScalarProperty Name="col_020" ColumnName="col_020" />
+          <ScalarProperty Name="col_021" ColumnName="col_021" />
+          <ScalarProperty Name="col_022" ColumnName="col_022" />
+          <ScalarProperty Name="col_023" ColumnName="col_023" />
+          <ScalarProperty Name="col_024" ColumnName="col_024" />
+          <ScalarProperty Name="col_025" ColumnName="col_025" />
+          <ScalarProperty Name="col_026" ColumnName="col_026" />
+          <ScalarProperty Name="col_027" ColumnName="col_027" />
+          <ScalarProperty Name="col_028" ColumnName="col_028" />
+          <ScalarProperty Name="col_029" ColumnName="col_029" />
+          <ScalarProperty Name="col_030" ColumnName="col_030" />
+          <ScalarProperty Name="col_031" ColumnName="col_031" />
+          <ScalarProperty Name="col_032" ColumnName="col_032" />
+          <ScalarProperty Name="col_033" ColumnName="col_033" />
+          <ScalarProperty Name="col_034" ColumnName="col_034" />
+          <ScalarProperty Name="col_035" ColumnName="col_035" />
+          <ScalarProperty Name="col_036" ColumnName="col_036" />
+          <ScalarProperty Name="col_037" ColumnName="col_037" />
+          <ScalarProperty Name="col_038" ColumnName="col_038" />
+          <ScalarProperty Name="col_039" ColumnName="col_039" />
+          <ScalarProperty Name="col_040" ColumnName="col_040" />
+          <ScalarProperty Name="col_041" ColumnName="col_041" />
+          <ScalarProperty Name="col_042" ColumnName="col_042" />
+          <ScalarProperty Name="col_043" ColumnName="col_043" />
+          <ScalarProperty Name="col_044" ColumnName="col_044" />
+          <ScalarProperty Name="col_045" ColumnName="col_045" />
+          <ScalarProperty Name="col_046" ColumnName="col_046" />
+          <ScalarProperty Name="col_047" ColumnName="col_047" />
+          <ScalarProperty Name="col_048" ColumnName="col_048" />
+          <ScalarProperty Name="col_049" ColumnName="col_049" />
+          <ScalarProperty Name="col_050" ColumnName="col_050" />
+          <ScalarProperty Name="col_051" ColumnName="col_051" />
+          <ScalarProperty Name="col_052" ColumnName="col_052" />
+          <ScalarProperty Name="col_053" ColumnName="col_053" />
+          <ScalarProperty Name="col_054" ColumnName="col_054" />
+          <ScalarProperty Name="col_055" ColumnName="col_055" />
+          <ScalarProperty Name="col_056" ColumnName="col_056" />
+          <ScalarProperty Name="col_057" ColumnName="col_057" />
+          <ScalarProperty Name="col_058" ColumnName="col_058" />
+          <ScalarProperty Name="col_059" ColumnName="col_059" />
+          <ScalarProperty Name="col_060" ColumnName="col_060" />
+          <ScalarProperty Name="col_061" ColumnName="col_061" />
+          <ScalarProperty Name="col_062" ColumnName="col_062" />
+          <ScalarProperty Name="col_063" ColumnName="col_063" />
+          <ScalarProperty Name="col_064" ColumnName="col_064" />
+          <ScalarProperty Name="col_065" ColumnName="col_065" />
+          <ScalarProperty Name="col_066" ColumnName="col_066" />
+          <ScalarProperty Name="col_067" ColumnName="col_067" />
+          <ScalarProperty Name="col_068" ColumnName="col_068" />
+          <ScalarProperty Name="col_069" ColumnName="col_069" />
+          <ScalarProperty Name="col_070" ColumnName="col_070" />
+          <ScalarProperty Name="col_071" ColumnName="col_071" />
+          <ScalarProperty Name="col_072" ColumnName="col_072" />
+          <ScalarProperty Name="col_073" ColumnName="col_073" />
+          <ScalarProperty Name="col_074" ColumnName="col_074" />
+          <ScalarProperty Name="col_075" ColumnName="col_075" />
+          <ScalarProperty Name="col_076" ColumnName="col_076" />
+          <ScalarProperty Name="col_077" ColumnName="col_077" />
+          <ScalarProperty Name="col_078" ColumnName="col_078" />
+          <ScalarProperty Name="col_079" ColumnName="col_079" />
+          <ScalarProperty Name="col_080" ColumnName="col_080" />
+          <ScalarProperty Name="col_081" ColumnName="col_081" />
+          <ScalarProperty Name="col_082" ColumnName="col_082" />
+          <ScalarProperty Name="col_083" ColumnName="col_083" />
+          <ScalarProperty Name="col_084" ColumnName="col_084" />
+          <ScalarProperty Name="col_085" ColumnName="col_085" />
+          <ScalarProperty Name="col_086" ColumnName="col_086" />
+          <ScalarProperty Name="col_087" ColumnName="col_087" />
+          <ScalarProperty Name="col_088" ColumnName="col_088" />
+          <ScalarProperty Name="col_089" ColumnName="col_089" />
+          <ScalarProperty Name="col_090" ColumnName="col_090" />
+          <ScalarProperty Name="col_091" ColumnName="col_091" />
+          <ScalarProperty Name="col_092" ColumnName="col_092" />
+          <ScalarProperty Name="col_093" ColumnName="col_093" />
+          <ScalarProperty Name="col_094" ColumnName="col_094" />
+          <ScalarProperty Name="col_095" ColumnName="col_095" />
+          <ScalarProperty Name="col_096" ColumnName="col_096" />
+          <ScalarProperty Name="col_097" ColumnName="col_097" />
+          <ScalarProperty Name="col_098" ColumnName="col_098" />
+          <ScalarProperty Name="col_099" ColumnName="col_099" />
+          <ScalarProperty Name="col_100" ColumnName="col_100" />
+          <ScalarProperty Name="col_101" ColumnName="col_101" />
+          <ScalarProperty Name="col_102" ColumnName="col_102" />
+          <ScalarProperty Name="col_103" ColumnName="col_103" />
+          <ScalarProperty Name="col_104" ColumnName="col_104" />
+          <ScalarProperty Name="col_105" ColumnName="col_105" />
+          <ScalarProperty Name="col_106" ColumnName="col_106" />
+          <ScalarProperty Name="col_107" ColumnName="col_107" />
+          <ScalarProperty Name="col_108" ColumnName="col_108" />
+          <ScalarProperty Name="col_109" ColumnName="col_109" />
+          <ScalarProperty Name="col_110" ColumnName="col_110" />
+          <ScalarProperty Name="col_111" ColumnName="col_111" />
+          <ScalarProperty Name="col_112" ColumnName="col_112" />
+          <ScalarProperty Name="col_113" ColumnName="col_113" />
+          <ScalarProperty Name="col_114" ColumnName="col_114" />
+          <ScalarProperty Name="col_115" ColumnName="col_115" />
+          <ScalarProperty Name="col_116" ColumnName="col_116" />
+          <ScalarProperty Name="col_117" ColumnName="col_117" />
+          <ScalarProperty Name="col_118" ColumnName="col_118" />
+          <ScalarProperty Name="col_119" ColumnName="col_119" />
+          <ScalarProperty Name="col_120" ColumnName="col_120" />
+          <ScalarProperty Name="col_121" ColumnName="col_121" />
+          <ScalarProperty Name="col_122" ColumnName="col_122" />
+          <ScalarProperty Name="col_123" ColumnName="col_123" />
+          <ScalarProperty Name="col_124" ColumnName="col_124" />
+          <ScalarProperty Name="col_125" ColumnName="col_125" />
+          <ScalarProperty Name="col_126" ColumnName="col_126" />
+          <ScalarProperty Name="col_127" ColumnName="col_127" />
+          <ScalarProperty Name="snapshot_id" ColumnName="snapshot_id" />
+          <ScalarProperty Name="col_128" ColumnName="col_128" />
+          <ScalarProperty Name="col_129" ColumnName="col_129" />
+          <ScalarProperty Name="col_130" ColumnName="col_130" />
+          <ScalarProperty Name="col_131" ColumnName="col_131" />
+          <ScalarProperty Name="col_132" ColumnName="col_132" />
+          <ScalarProperty Name="col_133" ColumnName="col_133" />
+          <ScalarProperty Name="col_134" ColumnName="col_134" />
+          <ScalarProperty Name="col_135" ColumnName="col_135" />
+          <ScalarProperty Name="col_136" ColumnName="col_136" />
+          <ScalarProperty Name="col_137" ColumnName="col_137" />
+          <ScalarProperty Name="col_138" ColumnName="col_138" />
+          <ScalarProperty Name="col_139" ColumnName="col_139" />
+          <ScalarProperty Name="col_140" ColumnName="col_140" />
+          <ScalarProperty Name="col_141" ColumnName="col_141" />
+          <ScalarProperty Name="col_142" ColumnName="col_142" />
+          <ScalarProperty Name="col_143" ColumnName="col_143" />
+          <ScalarProperty Name="col_144" ColumnName="col_144" />
+          <ScalarProperty Name="col_145" ColumnName="col_145" />
+          <ScalarProperty Name="col_146" ColumnName="col_146" />
+          <ScalarProperty Name="col_147" ColumnName="col_147" />
+          <ScalarProperty Name="col_148" ColumnName="col_148" />
+          <ScalarProperty Name="col_149" ColumnName="col_149" />
+          <ScalarProperty Name="col_150" ColumnName="col_150" />
+          <ScalarProperty Name="col_151" ColumnName="col_151" />
+          <ScalarProperty Name="col_152" ColumnName="col_152" />
+          <ScalarProperty Name="col_153" ColumnName="col_153" />
+          <ScalarProperty Name="col_154" ColumnName="col_154" />
+          <ScalarProperty Name="col_155" ColumnName="col_155" />
+          <ScalarProperty Name="col_156" ColumnName="col_156" />
+          <ScalarProperty Name="col_157" ColumnName="col_157" />
+          <ScalarProperty Name="col_158" ColumnName="col_158" />
+          <ScalarProperty Name="col_159" ColumnName="col_159" />
+          <ScalarProperty Name="col_160" ColumnName="col_160" />
+          <ScalarProperty Name="col_161" ColumnName="col_161" />
+          <ScalarProperty Name="col_162" ColumnName="col_162" />
+          <ScalarProperty Name="col_163" ColumnName="col_163" />
+          <ScalarProperty Name="col_164" ColumnName="col_164" />
+          <ScalarProperty Name="col_165" ColumnName="col_165" />
+          <ScalarProperty Name="col_166" ColumnName="col_166" />
+          <ScalarProperty Name="col_167" ColumnName="col_167" />
+          <ScalarProperty Name="col_168" ColumnName="col_168" />
+          <ScalarProperty Name="col_169" ColumnName="col_169" />
+          <ScalarProperty Name="col_170" ColumnName="col_170" />
+          <ScalarProperty Name="col_171" ColumnName="col_171" />
+          <ScalarProperty Name="col_172" ColumnName="col_172" />
+          <ScalarProperty Name="col_173" ColumnName="col_173" />
+          <ScalarProperty Name="col_174" ColumnName="col_174" />
+          <ScalarProperty Name="col_175" ColumnName="col_175" />
+          <ScalarProperty Name="col_176" ColumnName="col_176" />
+          <ScalarProperty Name="col_177" ColumnName="col_177" />
+          <ScalarProperty Name="col_178" ColumnName="col_178" />
+          <ScalarProperty Name="col_179" ColumnName="col_179" />
+          <ScalarProperty Name="col_180" ColumnName="col_180" />
+          <ScalarProperty Name="col_181" ColumnName="col_181" />
+          <ScalarProperty Name="col_182" ColumnName="col_182" />
+          <ScalarProperty Name="col_183" ColumnName="col_183" />
+          <ScalarProperty Name="col_184" ColumnName="col_184" />
+          <ScalarProperty Name="col_185" ColumnName="col_185" />
+          <ScalarProperty Name="col_186" ColumnName="col_186" />
+          <ScalarProperty Name="col_187" ColumnName="col_187" />
+          <ScalarProperty Name="col_188" ColumnName="col_188" />
+          <ScalarProperty Name="col_189" ColumnName="col_189" />
+          <ScalarProperty Name="col_190" ColumnName="col_190" />
+          <ScalarProperty Name="col_191" ColumnName="col_191" />
+          <ScalarProperty Name="col_192" ColumnName="col_192" />
+          <ScalarProperty Name="col_193" ColumnName="col_193" />
+          <ScalarProperty Name="col_194" ColumnName="col_194" />
+          <ScalarProperty Name="col_195" ColumnName="col_195" />
+          <ScalarProperty Name="col_196" ColumnName="col_196" />
+          <ScalarProperty Name="col_197" ColumnName="col_197" />
+          <ScalarProperty Name="col_198" ColumnName="col_198" />
+          <ScalarProperty Name="col_199" ColumnName="col_199" />
+          <ScalarProperty Name="col_200" ColumnName="col_200" />
+          <ScalarProperty Name="col_201" ColumnName="col_201" />
+          <ScalarProperty Name="col_202" ColumnName="col_202" />
+          <ScalarProperty Name="col_203" ColumnName="col_203" />
+          <ScalarProperty Name="col_204" ColumnName="col_204" />
+          <ScalarProperty Name="col_205" ColumnName="col_205" />
+          <ScalarProperty Name="col_206" ColumnName="col_206" />
+          <ScalarProperty Name="col_207" ColumnName="col_207" />
+          <ScalarProperty Name="col_208" ColumnName="col_208" />
+          <ScalarProperty Name="col_209" ColumnName="col_209" />
+          <ScalarProperty Name="col_210" ColumnName="col_210" />
+          <ScalarProperty Name="col_211" ColumnName="col_211" />
+          <ScalarProperty Name="col_212" ColumnName="col_212" />
+          <ScalarProperty Name="col_213" ColumnName="col_213" />
+          <ScalarProperty Name="col_214" ColumnName="col_214" />
+          <ScalarProperty Name="col_215" ColumnName="col_215" />
+          <ScalarProperty Name="col_216" ColumnName="col_216" />
+          <ScalarProperty Name="col_217" ColumnName="col_217" />
+          <ScalarProperty Name="col_218" ColumnName="col_218" />
+          <ScalarProperty Name="col_219" ColumnName="col_219" />
+          <ScalarProperty Name="col_220" ColumnName="col_220" />
+          <ScalarProperty Name="col_221" ColumnName="col_221" />
+          <ScalarProperty Name="col_222" ColumnName="col_222" />
+          <ScalarProperty Name="col_223" ColumnName="col_223" />
+          <ScalarProperty Name="col_224" ColumnName="col_224" />
+          <ScalarProperty Name="col_225" ColumnName="col_225" />
+          <ScalarProperty Name="col_226" ColumnName="col_226" />
+          <ScalarProperty Name="col_227" ColumnName="col_227" />
+          <ScalarProperty Name="col_228" ColumnName="col_228" />
+          <ScalarProperty Name="col_229" ColumnName="col_229" />
+          <ScalarProperty Name="col_230" ColumnName="col_230" />
+          <ScalarProperty Name="col_231" ColumnName="col_231" />
+          <ScalarProperty Name="col_232" ColumnName="col_232" />
+          <ScalarProperty Name="col_233" ColumnName="col_233" />
+          <ScalarProperty Name="col_234" ColumnName="col_234" />
+          <ScalarProperty Name="col_235" ColumnName="col_235" />
+          <ScalarProperty Name="col_236" ColumnName="col_236" />
+          <ScalarProperty Name="col_237" ColumnName="col_237" />
+          <ScalarProperty Name="col_238" ColumnName="col_238" />
+          <ScalarProperty Name="col_239" ColumnName="col_239" />
+          <ScalarProperty Name="col_240" ColumnName="col_240" />
+          <ScalarProperty Name="col_241" ColumnName="col_241" />
+          <ScalarProperty Name="col_242" ColumnName="col_242" />
+          <ScalarProperty Name="col_243" ColumnName="col_243" />
+          <ScalarProperty Name="col_244" ColumnName="col_244" />
+          <ScalarProperty Name="col_245" ColumnName="col_245" />
+          <ScalarProperty Name="col_246" ColumnName="col_246" />
+          <ScalarProperty Name="col_247" ColumnName="col_247" />
+          <ScalarProperty Name="col_248" ColumnName="col_248" />
+          <ScalarProperty Name="col_249" ColumnName="col_249" />
+          <ScalarProperty Name="col_250" ColumnName="col_250" />
+          <ScalarProperty Name="col_251" ColumnName="col_251" />
+          <ScalarProperty Name="col_252" ColumnName="col_252" />
+          <ScalarProperty Name="col_253" ColumnName="col_253" />
+          <ScalarProperty Name="col_254" ColumnName="col_254" />
+          <ScalarProperty Name="col_255" ColumnName="col_255" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notes">
+      <EntityTypeMapping TypeName="CcsServerModel.note">
+        <MappingFragment StoreEntitySet="note">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="obsolete_file_id" ColumnName="obsolete_file_id" />
+          <ScalarProperty Name="legacy_note_type" ColumnName="legacy_note_type" />
+          <ScalarProperty Name="obsolete_note_type_num" ColumnName="obsolete_note_type_num" />
+          <ScalarProperty Name="note_datetime" ColumnName="note_datetime" />
+          <ScalarProperty Name="note_text" ColumnName="note_text" />
+          <ScalarProperty Name="legacy_page_number" ColumnName="legacy_page_number" />
+          <ScalarProperty Name="legacy_pos_x" ColumnName="legacy_pos_x" />
+          <ScalarProperty Name="legacy_pos_y" ColumnName="legacy_pos_y" />
+          <ScalarProperty Name="obsolete_len_x" ColumnName="obsolete_len_x" />
+          <ScalarProperty Name="obsolete_len_y" ColumnName="obsolete_len_y" />
+          <ScalarProperty Name="obsolete_seq" ColumnName="obsolete_seq" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="onbase_doc_type">
+      <EntityTypeMapping TypeName="CcsServerModel.onbase_doc_type">
+        <MappingFragment StoreEntitySet="onbase_doc_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ob_itemtypenum_prod" ColumnName="ob_itemtypenum_prod" />
+          <ScalarProperty Name="ob_itemtypenum_test" ColumnName="ob_itemtypenum_test" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="onbase_document">
+      <EntityTypeMapping TypeName="CcsServerModel.onbase_document">
+        <MappingFragment StoreEntitySet="onbase_document">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="doc_id" ColumnName="doc_id" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="version_number" ColumnName="version_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="onbase_file_info">
+      <EntityTypeMapping TypeName="CcsServerModel.onbase_file_info">
+        <MappingFragment StoreEntitySet="onbase_file_info">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="file_id" ColumnName="file_id" />
+          <ScalarProperty Name="onbase_doc_id" ColumnName="onbase_doc_id" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="ob_imagetype" ColumnName="ob_imagetype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="onbase_key_type">
+      <EntityTypeMapping TypeName="CcsServerModel.onbase_key_type">
+        <MappingFragment StoreEntitySet="onbase_key_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ob_datatype" ColumnName="ob_datatype" />
+          <ScalarProperty Name="ob_keytypelen" ColumnName="ob_keytypelen" />
+          <ScalarProperty Name="ob_keytypenum_prod" ColumnName="ob_keytypenum_prod" />
+          <ScalarProperty Name="ob_keytypenum_test" ColumnName="ob_keytypenum_test" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="onbase_note">
+      <EntityTypeMapping TypeName="CcsServerModel.onbase_note">
+        <MappingFragment StoreEntitySet="onbase_note">
+          <ScalarProperty Name="onbase_note_id" ColumnName="onbase_note_id" />
+          <ScalarProperty Name="len_x" ColumnName="len_x" />
+          <ScalarProperty Name="len_y" ColumnName="len_y" />
+          <ScalarProperty Name="note_datetime" ColumnName="note_datetime" />
+          <ScalarProperty Name="page_number" ColumnName="page_number" />
+          <ScalarProperty Name="note_type_num" ColumnName="note_type_num" />
+          <ScalarProperty Name="pos_x" ColumnName="pos_x" />
+          <ScalarProperty Name="pos_y" ColumnName="pos_y" />
+          <ScalarProperty Name="note_text" ColumnName="note_text" />
+          <ScalarProperty Name="onbase_doc_id" ColumnName="onbase_doc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="snapshots">
+      <EntityTypeMapping TypeName="CcsServerModel.snapshot">
+        <MappingFragment StoreEntitySet="snapshot">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="doc_count" ColumnName="doc_count" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="error" ColumnName="error" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

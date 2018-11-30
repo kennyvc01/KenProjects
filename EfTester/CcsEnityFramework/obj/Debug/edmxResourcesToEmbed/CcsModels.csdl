@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CcsServerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="dataset">
+    <Key>
+      <PropertyRef Name="dataset_id" />
+    </Key>
+    <Property Name="dataset_id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="dataset_field" Relationship="Self.FK_dataset_field_dataset_dataset_id" FromRole="dataset" ToRole="dataset_field" />
+    <NavigationProperty Name="dataset_mapset" Relationship="Self.FK_dataset_mapset_dataset_dataset_id" FromRole="dataset" ToRole="dataset_mapset" />
+    <NavigationProperty Name="dataset_record" Relationship="Self.FK_dataset_record_dataset_dataset_id" FromRole="dataset" ToRole="dataset_record" />
+  </EntityType>
+  <EntityType Name="dataset_field">
+    <Key>
+      <PropertyRef Name="dataset_field_id" />
+    </Key>
+    <Property Name="dataset_field_id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="position" Type="Int16" Nullable="false" />
+    <Property Name="dataset_id" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="dataset" Relationship="Self.FK_dataset_field_dataset_dataset_id" FromRole="dataset_field" ToRole="dataset" />
+  </EntityType>
+  <EntityType Name="dataset_mapset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="key_type_mapset_id" Type="Int16" />
+    <Property Name="dataset_id" Type="Int16" Nullable="false" />
+    <Property Name="col_000" Type="Int16" />
+    <Property Name="col_001" Type="Int16" />
+    <Property Name="col_002" Type="Int16" />
+    <Property Name="col_003" Type="Int16" />
+    <Property Name="col_004" Type="Int16" />
+    <Property Name="col_005" Type="Int16" />
+    <Property Name="col_006" Type="Int16" />
+    <Property Name="col_007" Type="Int16" />
+    <Property Name="col_008" Type="Int16" />
+    <Property Name="col_009" Type="Int16" />
+    <Property Name="col_010" Type="Int16" />
+    <Property Name="col_011" Type="Int16" />
+    <Property Name="col_012" Type="Int16" />
+    <Property Name="col_013" Type="Int16" />
+    <Property Name="col_014" Type="Int16" />
+    <Property Name="col_015" Type="Int16" />
+    <Property Name="col_016" Type="Int16" />
+    <Property Name="col_017" Type="Int16" />
+    <Property Name="col_018" Type="Int16" />
+    <Property Name="col_019" Type="Int16" />
+    <Property Name="col_020" Type="Int16" />
+    <Property Name="col_021" Type="Int16" />
+    <Property Name="col_022" Type="Int16" />
+    <Property Name="col_023" Type="Int16" />
+    <Property Name="col_024" Type="Int16" />
+    <Property Name="col_025" Type="Int16" />
+    <Property Name="col_026" Type="Int16" />
+    <Property Name="col_027" Type="Int16" />
+    <Property Name="col_028" Type="Int16" />
+    <Property Name="col_029" Type="Int16" />
+    <Property Name="col_030" Type="Int16" />
+    <Property Name="col_031" Type="Int16" />
+    <Property Name="col_032" Type="Int16" />
+    <Property Name="col_033" Type="Int16" />
+    <Property Name="col_034" Type="Int16" />
+    <Property Name="col_035" Type="Int16" />
+    <Property Name="col_036" Type="Int16" />
+    <Property Name="col_037" Type="Int16" />
+    <Property Name="col_038" Type="Int16" />
+    <Property Name="col_039" Type="Int16" />
+    <Property Name="col_040" Type="Int16" />
+    <Property Name="col_041" Type="Int16" />
+    <Property Name="col_042" Type="Int16" />
+    <Property Name="col_043" Type="Int16" />
+    <Property Name="col_044" Type="Int16" />
+    <Property Name="col_045" Type="Int16" />
+    <Property Name="col_046" Type="Int16" />
+    <Property Name="col_047" Type="Int16" />
+    <Property Name="col_048" Type="Int16" />
+    <Property Name="col_049" Type="Int16" />
+    <Property Name="col_050" Type="Int16" />
+    <Property Name="col_051" Type="Int16" />
+    <Property Name="col_052" Type="Int16" />
+    <Property Name="col_053" Type="Int16" />
+    <Property Name="col_054" Type="Int16" />
+    <Property Name="col_055" Type="Int16" />
+    <Property Name="col_056" Type="Int16" />
+    <Property Name="col_057" Type="Int16" />
+    <Property Name="col_058" Type="Int16" />
+    <Property Name="col_059" Type="Int16" />
+    <Property Name="col_060" Type="Int16" />
+    <Property Name="col_061" Type="Int16" />
+    <Property Name="col_062" Type="Int16" />
+    <Property Name="col_063" Type="Int16" />
+    <Property Name="col_064" Type="Int16" />
+    <Property Name="col_065" Type="Int16" />
+    <Property Name="col_066" Type="Int16" />
+    <Property Name="col_067" Type="Int16" />
+    <Property Name="col_068" Type="Int16" />
+    <Property Name="col_069" Type="Int16" />
+    <Property Name="col_070" Type="Int16" />
+    <Property Name="col_071" Type="Int16" />
+    <Property Name="col_072" Type="Int16" />
+    <Property Name="col_073" Type="Int16" />
+    <Property Name="col_074" Type="Int16" />
+    <Property Name="col_075" Type="Int16" />
+    <Property Name="col_076" Type="Int16" />
+    <Property Name="col_077" Type="Int16" />
+    <Property Name="col_078" Type="Int16" />
+    <Property Name="col_079" Type="Int16" />
+    <Property Name="col_080" Type="Int16" />
+    <Property Name="col_081" Type="Int16" />
+    <Property Name="col_082" Type="Int16" />
+    <Property Name="col_083" Type="Int16" />
+    <Property Name="col_084" Type="Int16" />
+    <Property Name="col_085" Type="Int16" />
+    <Property Name="col_086" Type="Int16" />
+    <Property Name="col_087" Type="Int16" />
+    <Property Name="col_088" Type="Int16" />
+    <Property Name="col_089" Type="Int16" />
+    <Property Name="col_090" Type="Int16" />
+    <Property Name="col_091" Type="Int16" />
+    <Property Name="col_092" Type="Int16" />
+    <Property Name="col_093" Type="Int16" />
+    <Property Name="col_094" Type="Int16" />
+    <Property Name="col_095" Type="Int16" />
+    <Property Name="col_096" Type="Int16" />
+    <Property Name="col_097" Type="Int16" />
+    <Property Name="col_098" Type="Int16" />
+    <Property Name="col_099" Type="Int16" />
+    <Property Name="col_100" Type="Int16" />
+    <Property Name="col_101" Type="Int16" />
+    <Property Name="col_102" Type="Int16" />
+    <Property Name="col_103" Type="Int16" />
+    <Property Name="col_104" Type="Int16" />
+    <Property Name="col_105" Type="Int16" />
+    <Property Name="col_106" Type="Int16" />
+    <Property Name="col_107" Type="Int16" />
+    <Property Name="col_108" Type="Int16" />
+    <Property Name="col_109" Type="Int16" />
+    <Property Name="col_110" Type="Int16" />
+    <Property Name="col_111" Type="Int16" />
+    <Property Name="col_112" Type="Int16" />
+    <Property Name="col_113" Type="Int16" />
+    <Property Name="col_114" Type="Int16" />
+    <Property Name="col_115" Type="Int16" />
+    <Property Name="col_116" Type="Int16" />
+    <Property Name="col_117" Type="Int16" />
+    <Property Name="col_118" Type="Int16" />
+    <Property Name="col_119" Type="Int16" />
+    <Property Name="col_120" Type="Int16" />
+    <Property Name="col_121" Type="Int16" />
+    <Property Name="col_122" Type="Int16" />
+    <Property Name="col_123" Type="Int16" />
+    <Property Name="col_124" Type="Int16" />
+    <Property Name="col_125" Type="Int16" />
+    <Property Name="col_126" Type="Int16" />
+    <Property Name="col_127" Type="Int16" />
+    <NavigationProperty Name="dataset" Relationship="Self.FK_dataset_mapset_dataset_dataset_id" FromRole="dataset_mapset" ToRole="dataset" />
+    <NavigationProperty Name="key_type_mapset" Relationship="Self.FK_dataset_mapset_key_type_mapset_key_type_mapset_id" FromRole="dataset_mapset" ToRole="key_type_mapset" />
+  </EntityType>
+  <EntityType Name="dataset_record">
+    <Key>
+      <PropertyRef Name="dataset_record_id" />
+    </Key>
+    <Property Name="dataset_record_id" Type="Int64" Nullable="false" />
+    <Property Name="doc_id" Type="Int64" />
+    <Property Name="dataset_id" Type="Int16" Nullable="false" />
+    <Property Name="col_000" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_001" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_002" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_003" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_004" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_005" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_006" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_007" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_008" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_009" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_010" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_011" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_012" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_013" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_014" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_015" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_016" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_017" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_018" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_019" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_020" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_021" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_022" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_023" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_024" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_025" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_026" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_027" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_028" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_029" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_030" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_031" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_032" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_033" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_034" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_035" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_036" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_037" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_038" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_039" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_040" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_041" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_042" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_043" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_044" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_045" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_046" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_047" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_048" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_049" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_050" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_051" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_052" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_053" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_054" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_055" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_056" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_057" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_058" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_059" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_060" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_061" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_062" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_063" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_064" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_065" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_066" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_067" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_068" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_069" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_070" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_071" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_072" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_073" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_074" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_075" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_076" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_077" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_078" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_079" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_080" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_081" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_082" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_083" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_084" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_085" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_086" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_087" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_088" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_089" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_090" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_091" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_092" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_093" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_094" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_095" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_096" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_097" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_098" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_099" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_100" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_101" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_102" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_103" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_104" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_105" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_106" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_107" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_108" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_109" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_110" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_111" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_112" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_113" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_114" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_115" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_116" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_117" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_118" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_119" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_120" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_121" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_122" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_123" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_124" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_125" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_126" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_127" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="dataset" Relationship="Self.FK_dataset_record_dataset_dataset_id" FromRole="dataset_record" ToRole="dataset" />
+    <NavigationProperty Name="document" Relationship="Self.FK_dataset_record_document_doc_id" FromRole="dataset_record" ToRole="document" />
+  </EntityType>
+  <EntityType Name="dip_batch">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="doc_count" Type="Int32" Nullable="false" />
+    <Property Name="file_path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="locked" Type="Boolean" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="flags" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="documents" Relationship="Self.FK_document_dip_batch_dip_batch_id" FromRole="dip_batch" ToRole="document" />
+  </EntityType>
+  <EntityType Name="diskgroup">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="flags" Type="Int32" Nullable="false" />
+    <Property Name="max_fldr_files" Type="Int32" Nullable="false" />
+    <Property Name="max_vol_bytes" Type="Int64" Nullable="false" />
+    <Property Name="next_vol" Type="Int32" Nullable="false" />
+    <Property Name="root_path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="default_volume_flags" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="doc_type_mapping">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="lookup_000" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lookup_001" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="lookup_002" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="lookup_003" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="lookup_004" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ob_doc_reason_lookup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="key_type_mapset_id" Type="Int16" />
+    <Property Name="ob_doc_type_id" Type="Int16" />
+    <NavigationProperty Name="key_type_mapset" Relationship="Self.FK_doc_type_mapping_key_type_mapset_key_type_mapset_id" FromRole="doc_type_mapping" ToRole="key_type_mapset" />
+    <NavigationProperty Name="onbase_doc_type" Relationship="Self.FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id" FromRole="doc_type_mapping" ToRole="onbase_doc_type" />
+  </EntityType>
+  <EntityType Name="document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="legacy_id" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phase" Type="Int32" Nullable="false" />
+    <Property Name="exclusion_code" Type="Int32" />
+    <Property Name="exception_code" Type="Int32" />
+    <Property Name="dip_batch_id" Type="Int32" />
+    <Property Name="docset_local_id" Type="Int64" />
+    <Property Name="docset_remote_id" Type="Int64" />
+    <Property Name="inventory_history_id" Type="Int16" Nullable="false" />
+    <Property Name="snapshot_id" Type="Int16" />
+    <Property Name="legacy_source" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="dataset_record" Relationship="Self.FK_dataset_record_document_doc_id" FromRole="document" ToRole="dataset_record" />
+    <NavigationProperty Name="dip_batch" Relationship="Self.FK_document_dip_batch_dip_batch_id" FromRole="document" ToRole="dip_batch" />
+    <NavigationProperty Name="snapshot" Relationship="Self.FK_document_snapshot_snapshot_id" FromRole="document" ToRole="snapshot" />
+    <NavigationProperty Name="files" Relationship="Self.FK_file_document_doc_id" FromRole="document" ToRole="file" />
+    <NavigationProperty Name="metadata" Relationship="Self.FK_metadata_document_doc_id" FromRole="document" ToRole="metadata" />
+    <NavigationProperty Name="notes" Relationship="Self.FK_note_document_doc_id" FromRole="document" ToRole="note" />
+    <NavigationProperty Name="onbase_document" Relationship="Self.FK_onbase_document_document_doc_id" FromRole="document" ToRole="onbase_document" />
+  </EntityType>
+  <EntityType Name="field">
+    <Key>
+      <PropertyRef Name="field_id" />
+    </Key>
+    <Property Name="field_id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="450" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="position" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="file">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="doc_id" Type="Int64" />
+    <Property Name="volume_id" Type="Int64" Nullable="false" />
+    <Property Name="relative_path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="file_size" Type="Int32" Nullable="false" />
+    <Property Name="file_type_id" Type="Int32" />
+    <Property Name="sb_file_type" Type="Int32" />
+    <Property Name="snapshot_id" Type="Int16" />
+    <Property Name="seq" Type="Int32" Nullable="false" />
+    <Property Name="page_count" Type="Int32" />
+    <Property Name="x_dpi" Type="Int32" />
+    <Property Name="y_dpi" Type="Int32" />
+    <NavigationProperty Name="document" Relationship="Self.FK_file_document_doc_id" FromRole="file" ToRole="document" />
+    <NavigationProperty Name="file_type" Relationship="Self.FK_file_file_type_file_type_id" FromRole="file" ToRole="file_type" />
+    <NavigationProperty Name="snapshot" Relationship="Self.FK_file_snapshot_snapshot_id" FromRole="file" ToRole="snapshot" />
+    <NavigationProperty Name="legacy_file_info" Relationship="Self.FK_legacy_file_info_file_file_id" FromRole="file" ToRole="legacy_file_info" />
+    <NavigationProperty Name="onbase_file_info" Relationship="Self.FK_onbase_file_info_file_file_id" FromRole="file" ToRole="onbase_file_info" />
+  </EntityType>
+  <EntityType Name="file_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="file_type1" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hsi_filetypenum" Type="Int64" />
+    <Property Name="sb_file_type" Type="Int32" />
+    <Property Name="file_extension" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="files" Relationship="Self.FK_file_file_type_file_type_id" FromRole="file_type" ToRole="file" />
+  </EntityType>
+  <EntityType Name="key_type_mapset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="metadata_doc_date" Type="Int16" Nullable="false" />
+    <Property Name="col_000" Type="Int16" />
+    <Property Name="col_001" Type="Int16" />
+    <Property Name="col_002" Type="Int16" />
+    <Property Name="col_003" Type="Int16" />
+    <Property Name="col_004" Type="Int16" />
+    <Property Name="col_005" Type="Int16" />
+    <Property Name="col_006" Type="Int16" />
+    <Property Name="col_007" Type="Int16" />
+    <Property Name="col_008" Type="Int16" />
+    <Property Name="col_009" Type="Int16" />
+    <Property Name="col_010" Type="Int16" />
+    <Property Name="col_011" Type="Int16" />
+    <Property Name="col_012" Type="Int16" />
+    <Property Name="col_013" Type="Int16" />
+    <Property Name="col_014" Type="Int16" />
+    <Property Name="col_015" Type="Int16" />
+    <Property Name="col_016" Type="Int16" />
+    <Property Name="col_017" Type="Int16" />
+    <Property Name="col_018" Type="Int16" />
+    <Property Name="col_019" Type="Int16" />
+    <Property Name="col_020" Type="Int16" />
+    <Property Name="col_021" Type="Int16" />
+    <Property Name="col_022" Type="Int16" />
+    <Property Name="col_023" Type="Int16" />
+    <Property Name="col_024" Type="Int16" />
+    <Property Name="col_025" Type="Int16" />
+    <Property Name="col_026" Type="Int16" />
+    <Property Name="col_027" Type="Int16" />
+    <Property Name="col_028" Type="Int16" />
+    <Property Name="col_029" Type="Int16" />
+    <Property Name="col_030" Type="Int16" />
+    <Property Name="col_031" Type="Int16" />
+    <Property Name="col_032" Type="Int16" />
+    <Property Name="col_033" Type="Int16" />
+    <Property Name="col_034" Type="Int16" />
+    <Property Name="col_035" Type="Int16" />
+    <Property Name="col_036" Type="Int16" />
+    <Property Name="col_037" Type="Int16" />
+    <Property Name="col_038" Type="Int16" />
+    <Property Name="col_039" Type="Int16" />
+    <Property Name="col_040" Type="Int16" />
+    <Property Name="col_041" Type="Int16" />
+    <Property Name="col_042" Type="Int16" />
+    <Property Name="col_043" Type="Int16" />
+    <Property Name="col_044" Type="Int16" />
+    <Property Name="col_045" Type="Int16" />
+    <Property Name="col_046" Type="Int16" />
+    <Property Name="col_047" Type="Int16" />
+    <Property Name="col_048" Type="Int16" />
+    <Property Name="col_049" Type="Int16" />
+    <Property Name="col_050" Type="Int16" />
+    <Property Name="col_051" Type="Int16" />
+    <Property Name="col_052" Type="Int16" />
+    <Property Name="col_053" Type="Int16" />
+    <Property Name="col_054" Type="Int16" />
+    <Property Name="col_055" Type="Int16" />
+    <Property Name="col_056" Type="Int16" />
+    <Property Name="col_057" Type="Int16" />
+    <Property Name="col_058" Type="Int16" />
+    <Property Name="col_059" Type="Int16" />
+    <Property Name="col_060" Type="Int16" />
+    <Property Name="col_061" Type="Int16" />
+    <Property Name="col_062" Type="Int16" />
+    <Property Name="col_063" Type="Int16" />
+    <Property Name="col_064" Type="Int16" />
+    <Property Name="col_065" Type="Int16" />
+    <Property Name="col_066" Type="Int16" />
+    <Property Name="col_067" Type="Int16" />
+    <Property Name="col_068" Type="Int16" />
+    <Property Name="col_069" Type="Int16" />
+    <Property Name="col_070" Type="Int16" />
+    <Property Name="col_071" Type="Int16" />
+    <Property Name="col_072" Type="Int16" />
+    <Property Name="col_073" Type="Int16" />
+    <Property Name="col_074" Type="Int16" />
+    <Property Name="col_075" Type="Int16" />
+    <Property Name="col_076" Type="Int16" />
+    <Property Name="col_077" Type="Int16" />
+    <Property Name="col_078" Type="Int16" />
+    <Property Name="col_079" Type="Int16" />
+    <Property Name="col_080" Type="Int16" />
+    <Property Name="col_081" Type="Int16" />
+    <Property Name="col_082" Type="Int16" />
+    <Property Name="col_083" Type="Int16" />
+    <Property Name="col_084" Type="Int16" />
+    <Property Name="col_085" Type="Int16" />
+    <Property Name="col_086" Type="Int16" />
+    <Property Name="col_087" Type="Int16" />
+    <Property Name="col_088" Type="Int16" />
+    <Property Name="col_089" Type="Int16" />
+    <Property Name="col_090" Type="Int16" />
+    <Property Name="col_091" Type="Int16" />
+    <Property Name="col_092" Type="Int16" />
+    <Property Name="col_093" Type="Int16" />
+    <Property Name="col_094" Type="Int16" />
+    <Property Name="col_095" Type="Int16" />
+    <Property Name="col_096" Type="Int16" />
+    <Property Name="col_097" Type="Int16" />
+    <Property Name="col_098" Type="Int16" />
+    <Property Name="col_099" Type="Int16" />
+    <Property Name="col_100" Type="Int16" />
+    <Property Name="col_101" Type="Int16" />
+    <Property Name="col_102" Type="Int16" />
+    <Property Name="col_103" Type="Int16" />
+    <Property Name="col_104" Type="Int16" />
+    <Property Name="col_105" Type="Int16" />
+    <Property Name="col_106" Type="Int16" />
+    <Property Name="col_107" Type="Int16" />
+    <Property Name="col_108" Type="Int16" />
+    <Property Name="col_109" Type="Int16" />
+    <Property Name="col_110" Type="Int16" />
+    <Property Name="col_111" Type="Int16" />
+    <Property Name="col_112" Type="Int16" />
+    <Property Name="col_113" Type="Int16" />
+    <Property Name="col_114" Type="Int16" />
+    <Property Name="col_115" Type="Int16" />
+    <Property Name="col_116" Type="Int16" />
+    <Property Name="col_117" Type="Int16" />
+    <Property Name="col_118" Type="Int16" />
+    <Property Name="col_119" Type="Int16" />
+    <Property Name="col_120" Type="Int16" />
+    <Property Name="col_121" Type="Int16" />
+    <Property Name="col_122" Type="Int16" />
+    <Property Name="col_123" Type="Int16" />
+    <Property Name="col_124" Type="Int16" />
+    <Property Name="col_125" Type="Int16" />
+    <Property Name="col_126" Type="Int16" />
+    <Property Name="col_127" Type="Int16" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_128" Type="Int16" />
+    <Property Name="col_129" Type="Int16" />
+    <Property Name="col_130" Type="Int16" />
+    <Property Name="col_131" Type="Int16" />
+    <Property Name="col_132" Type="Int16" />
+    <Property Name="col_133" Type="Int16" />
+    <Property Name="col_134" Type="Int16" />
+    <Property Name="col_135" Type="Int16" />
+    <Property Name="col_136" Type="Int16" />
+    <Property Name="col_137" Type="Int16" />
+    <Property Name="col_138" Type="Int16" />
+    <Property Name="col_139" Type="Int16" />
+    <Property Name="col_140" Type="Int16" />
+    <Property Name="col_141" Type="Int16" />
+    <Property Name="col_142" Type="Int16" />
+    <Property Name="col_143" Type="Int16" />
+    <Property Name="col_144" Type="Int16" />
+    <Property Name="col_145" Type="Int16" />
+    <Property Name="col_146" Type="Int16" />
+    <Property Name="col_147" Type="Int16" />
+    <Property Name="col_148" Type="Int16" />
+    <Property Name="col_149" Type="Int16" />
+    <Property Name="col_150" Type="Int16" />
+    <Property Name="col_151" Type="Int16" />
+    <Property Name="col_152" Type="Int16" />
+    <Property Name="col_153" Type="Int16" />
+    <Property Name="col_154" Type="Int16" />
+    <Property Name="col_155" Type="Int16" />
+    <Property Name="col_156" Type="Int16" />
+    <Property Name="col_157" Type="Int16" />
+    <Property Name="col_158" Type="Int16" />
+    <Property Name="col_159" Type="Int16" />
+    <Property Name="col_160" Type="Int16" />
+    <Property Name="col_161" Type="Int16" />
+    <Property Name="col_162" Type="Int16" />
+    <Property Name="col_163" Type="Int16" />
+    <Property Name="col_164" Type="Int16" />
+    <Property Name="col_165" Type="Int16" />
+    <Property Name="col_166" Type="Int16" />
+    <Property Name="col_167" Type="Int16" />
+    <Property Name="col_168" Type="Int16" />
+    <Property Name="col_169" Type="Int16" />
+    <Property Name="col_170" Type="Int16" />
+    <Property Name="col_171" Type="Int16" />
+    <Property Name="col_172" Type="Int16" />
+    <Property Name="col_173" Type="Int16" />
+    <Property Name="col_174" Type="Int16" />
+    <Property Name="col_175" Type="Int16" />
+    <Property Name="col_176" Type="Int16" />
+    <Property Name="col_177" Type="Int16" />
+    <Property Name="col_178" Type="Int16" />
+    <Property Name="col_179" Type="Int16" />
+    <Property Name="col_180" Type="Int16" />
+    <Property Name="col_181" Type="Int16" />
+    <Property Name="col_182" Type="Int16" />
+    <Property Name="col_183" Type="Int16" />
+    <Property Name="col_184" Type="Int16" />
+    <Property Name="col_185" Type="Int16" />
+    <Property Name="col_186" Type="Int16" />
+    <Property Name="col_187" Type="Int16" />
+    <Property Name="col_188" Type="Int16" />
+    <Property Name="col_189" Type="Int16" />
+    <Property Name="col_190" Type="Int16" />
+    <Property Name="col_191" Type="Int16" />
+    <Property Name="col_192" Type="Int16" />
+    <Property Name="col_193" Type="Int16" />
+    <Property Name="col_194" Type="Int16" />
+    <Property Name="col_195" Type="Int16" />
+    <Property Name="col_196" Type="Int16" />
+    <Property Name="col_197" Type="Int16" />
+    <Property Name="col_198" Type="Int16" />
+    <Property Name="col_199" Type="Int16" />
+    <Property Name="col_200" Type="Int16" />
+    <Property Name="col_201" Type="Int16" />
+    <Property Name="col_202" Type="Int16" />
+    <Property Name="col_203" Type="Int16" />
+    <Property Name="col_204" Type="Int16" />
+    <Property Name="col_205" Type="Int16" />
+    <Property Name="col_206" Type="Int16" />
+    <Property Name="col_207" Type="Int16" />
+    <Property Name="col_208" Type="Int16" />
+    <Property Name="col_209" Type="Int16" />
+    <Property Name="col_210" Type="Int16" />
+    <Property Name="col_211" Type="Int16" />
+    <Property Name="col_212" Type="Int16" />
+    <Property Name="col_213" Type="Int16" />
+    <Property Name="col_214" Type="Int16" />
+    <Property Name="col_215" Type="Int16" />
+    <Property Name="col_216" Type="Int16" />
+    <Property Name="col_217" Type="Int16" />
+    <Property Name="col_218" Type="Int16" />
+    <Property Name="col_219" Type="Int16" />
+    <Property Name="col_220" Type="Int16" />
+    <Property Name="col_221" Type="Int16" />
+    <Property Name="col_222" Type="Int16" />
+    <Property Name="col_223" Type="Int16" />
+    <Property Name="col_224" Type="Int16" />
+    <Property Name="col_225" Type="Int16" />
+    <Property Name="col_226" Type="Int16" />
+    <Property Name="col_227" Type="Int16" />
+    <Property Name="col_228" Type="Int16" />
+    <Property Name="col_229" Type="Int16" />
+    <Property Name="col_230" Type="Int16" />
+    <Property Name="col_231" Type="Int16" />
+    <Property Name="col_232" Type="Int16" />
+    <Property Name="col_233" Type="Int16" />
+    <Property Name="col_234" Type="Int16" />
+    <Property Name="col_235" Type="Int16" />
+    <Property Name="col_236" Type="Int16" />
+    <Property Name="col_237" Type="Int16" />
+    <Property Name="col_238" Type="Int16" />
+    <Property Name="col_239" Type="Int16" />
+    <Property Name="col_240" Type="Int16" />
+    <Property Name="col_241" Type="Int16" />
+    <Property Name="col_242" Type="Int16" />
+    <Property Name="col_243" Type="Int16" />
+    <Property Name="col_244" Type="Int16" />
+    <Property Name="col_245" Type="Int16" />
+    <Property Name="col_246" Type="Int16" />
+    <Property Name="col_247" Type="Int16" />
+    <Property Name="col_248" Type="Int16" />
+    <Property Name="col_249" Type="Int16" />
+    <Property Name="col_250" Type="Int16" />
+    <Property Name="col_251" Type="Int16" />
+    <Property Name="col_252" Type="Int16" />
+    <Property Name="col_253" Type="Int16" />
+    <Property Name="col_254" Type="Int16" />
+    <Property Name="col_255" Type="Int16" />
+    <NavigationProperty Name="dataset_mapset" Relationship="Self.FK_dataset_mapset_key_type_mapset_key_type_mapset_id" FromRole="key_type_mapset" ToRole="dataset_mapset" />
+    <NavigationProperty Name="doc_type_mapping" Relationship="Self.FK_doc_type_mapping_key_type_mapset_key_type_mapset_id" FromRole="key_type_mapset" ToRole="doc_type_mapping" />
+  </EntityType>
+  <EntityType Name="legacy_file_info">
+    <Key>
+      <PropertyRef Name="file_id" />
+    </Key>
+    <Property Name="file_id" Type="Int64" Nullable="false" />
+    <Property Name="deleted" Type="Boolean" Nullable="false" />
+    <Property Name="legacy_file_id" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="legacy_file_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="version_number" Type="Int32" />
+    <Property Name="seq" Type="Int32" Nullable="false" />
+    <Property Name="legacy_rotation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="file" Relationship="Self.FK_legacy_file_info_file_file_id" FromRole="legacy_file_info" ToRole="file" />
+  </EntityType>
+  <EntityType Name="max_num_keys">
+    <Key>
+      <PropertyRef Name="num_key" />
+    </Key>
+    <Property Name="num_key" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descr" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="next_id" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="metadata">
+    <Key>
+      <PropertyRef Name="doc_id" />
+    </Key>
+    <Property Name="doc_id" Type="Int64" Nullable="false" />
+    <Property Name="col_000" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_001" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_002" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_003" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_004" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_005" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_006" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_007" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_008" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_009" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_010" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_011" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_012" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_013" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_014" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_015" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_016" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_017" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_018" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_019" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_020" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_021" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_022" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_023" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_024" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_025" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_026" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_027" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_028" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_029" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_030" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_031" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_032" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_033" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_034" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_035" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_036" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_037" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_038" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_039" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_040" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_041" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_042" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_043" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_044" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_045" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_046" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_047" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_048" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_049" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_050" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_051" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_052" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_053" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_054" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_055" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_056" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_057" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_058" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_059" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_060" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_061" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_062" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_063" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_064" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_065" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_066" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_067" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_068" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_069" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_070" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_071" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_072" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_073" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_074" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_075" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_076" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_077" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_078" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_079" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_080" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_081" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_082" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_083" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_084" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_085" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_086" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_087" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_088" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_089" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_090" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_091" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_092" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_093" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_094" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_095" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_096" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_097" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_098" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_099" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_100" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_101" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_102" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_103" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_104" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_105" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_106" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_107" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_108" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_109" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_110" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_111" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_112" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_113" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_114" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_115" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_116" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_117" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_118" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_119" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_120" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_121" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_122" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_123" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_124" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_125" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_126" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_127" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="snapshot_id" Type="Int16" Nullable="false" />
+    <Property Name="col_128" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_129" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_130" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_131" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_132" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_133" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_134" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_135" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_136" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_137" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_138" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_139" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_140" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_141" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_142" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_143" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_144" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_145" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_146" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_147" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_148" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_149" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_150" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_151" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_152" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_153" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_154" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_155" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_156" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_157" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_158" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_159" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_160" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_161" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_162" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_163" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_164" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_165" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_166" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_167" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_168" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_169" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_170" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_171" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_172" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_173" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_174" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_175" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_176" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_177" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_178" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_179" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_180" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_181" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_182" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_183" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_184" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_185" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_186" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_187" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_188" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_189" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_190" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_191" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_192" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_193" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_194" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_195" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_196" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_197" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_198" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_199" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_200" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_201" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_202" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_203" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_204" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_205" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_206" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_207" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_208" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_209" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_210" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_211" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_212" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_213" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_214" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_215" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_216" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_217" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_218" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_219" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_220" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_221" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_222" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_223" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_224" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_225" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_226" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_227" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_228" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_229" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_230" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_231" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_232" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_233" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_234" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_235" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_236" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_237" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_238" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_239" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_240" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_241" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_242" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_243" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_244" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_245" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_246" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_247" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_248" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_249" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_250" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_251" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_252" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_253" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_254" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="col_255" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="document" Relationship="Self.FK_metadata_document_doc_id" FromRole="metadata" ToRole="document" />
+    <NavigationProperty Name="snapshot" Relationship="Self.FK_metadata_snapshot_snapshot_id" FromRole="metadata" ToRole="snapshot" />
+  </EntityType>
+  <EntityType Name="note">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="obsolete_file_id" Type="Int64" />
+    <Property Name="legacy_note_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="obsolete_note_type_num" Type="Int64" />
+    <Property Name="note_datetime" Type="DateTime" Precision="7" />
+    <Property Name="note_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="legacy_page_number" Type="Int32" />
+    <Property Name="legacy_pos_x" Type="Int32" />
+    <Property Name="legacy_pos_y" Type="Int32" />
+    <Property Name="obsolete_len_x" Type="Int32" />
+    <Property Name="obsolete_len_y" Type="Int32" />
+    <Property Name="obsolete_seq" Type="Int64" />
+    <Property Name="doc_id" Type="Int64" />
+    <NavigationProperty Name="document" Relationship="Self.FK_note_document_doc_id" FromRole="note" ToRole="document" />
+  </EntityType>
+  <EntityType Name="onbase_doc_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ob_itemtypenum_prod" Type="Int64" />
+    <Property Name="ob_itemtypenum_test" Type="Int64" />
+    <NavigationProperty Name="doc_type_mapping" Relationship="Self.FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id" FromRole="onbase_doc_type" ToRole="doc_type_mapping" />
+  </EntityType>
+  <EntityType Name="onbase_document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="doc_id" Type="Int64" Nullable="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="version_number" Type="Int32" />
+    <NavigationProperty Name="document" Relationship="Self.FK_onbase_document_document_doc_id" FromRole="onbase_document" ToRole="document" />
+    <NavigationProperty Name="onbase_file_info" Relationship="Self.FK_onbase_file_info_onbase_document_onbase_doc_id" FromRole="onbase_document" ToRole="onbase_file_info" />
+    <NavigationProperty Name="onbase_note" Relationship="Self.FK_onbase_note_onbase_document_onbase_doc_id" FromRole="onbase_document" ToRole="onbase_note" />
+  </EntityType>
+  <EntityType Name="onbase_file_info">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="file_id" Type="Int64" Nullable="false" />
+    <Property Name="onbase_doc_id" Type="Int64" Nullable="false" />
+    <Property Name="seq" Type="Int32" Nullable="false" />
+    <Property Name="ob_imagetype" Type="Int32" />
+    <NavigationProperty Name="file" Relationship="Self.FK_onbase_file_info_file_file_id" FromRole="onbase_file_info" ToRole="file" />
+    <NavigationProperty Name="onbase_document" Relationship="Self.FK_onbase_file_info_onbase_document_onbase_doc_id" FromRole="onbase_file_info" ToRole="onbase_document" />
+  </EntityType>
+  <EntityType Name="onbase_key_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ob_datatype" Type="Int64" />
+    <Property Name="ob_keytypelen" Type="Int64" />
+    <Property Name="ob_keytypenum_prod" Type="Int64" />
+    <Property Name="ob_keytypenum_test" Type="Int64" />
+  </EntityType>
+  <EntityType Name="onbase_note">
+    <Key>
+      <PropertyRef Name="onbase_note_id" />
+    </Key>
+    <Property Name="onbase_note_id" Type="Int64" Nullable="false" />
+    <Property Name="len_x" Type="Int32" />
+    <Property Name="len_y" Type="Int32" />
+    <Property Name="note_datetime" Type="DateTime" Precision="7" />
+    <Property Name="page_number" Type="Int32" />
+    <Property Name="note_type_num" Type="Int32" Nullable="false" />
+    <Property Name="pos_x" Type="Int32" />
+    <Property Name="pos_y" Type="Int32" />
+    <Property Name="note_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="onbase_doc_id" Type="Int64" />
+    <NavigationProperty Name="onbase_document" Relationship="Self.FK_onbase_note_onbase_document_onbase_doc_id" FromRole="onbase_note" ToRole="onbase_document" />
+  </EntityType>
+  <EntityType Name="snapshot">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int16" Nullable="false" />
+    <Property Name="create_time" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="doc_count" Type="Int32" Nullable="false" />
+    <Property Name="locked" Type="Boolean" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="error" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="documents" Relationship="Self.FK_document_snapshot_snapshot_id" FromRole="snapshot" ToRole="document" />
+    <NavigationProperty Name="files" Relationship="Self.FK_file_snapshot_snapshot_id" FromRole="snapshot" ToRole="file" />
+    <NavigationProperty Name="metadatas" Relationship="Self.FK_metadata_snapshot_snapshot_id" FromRole="snapshot" ToRole="metadata" />
+  </EntityType>
+  <Association Name="FK_dataset_field_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="dataset_field" Type="Self.dataset_field" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_field">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_mapset_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1" />
+    <End Role="dataset_mapset" Type="Self.dataset_mapset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_mapset">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_record_dataset_dataset_id">
+    <End Role="dataset" Type="Self.dataset" Multiplicity="1" />
+    <End Role="dataset_record" Type="Self.dataset_record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dataset">
+        <PropertyRef Name="dataset_id" />
+      </Principal>
+      <Dependent Role="dataset_record">
+        <PropertyRef Name="dataset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_mapset_key_type_mapset_key_type_mapset_id">
+    <End Role="key_type_mapset" Type="Self.key_type_mapset" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="dataset_mapset" Type="Self.dataset_mapset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="key_type_mapset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dataset_mapset">
+        <PropertyRef Name="key_type_mapset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dataset_record_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="dataset_record" Type="Self.dataset_record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="dataset_record">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_dip_batch_dip_batch_id">
+    <End Role="dip_batch" Type="Self.dip_batch" Multiplicity="0..1" />
+    <End Role="document" Type="Self.document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dip_batch">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="document">
+        <PropertyRef Name="dip_batch_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doc_type_mapping_key_type_mapset_key_type_mapset_id">
+    <End Role="key_type_mapset" Type="Self.key_type_mapset" Multiplicity="0..1" />
+    <End Role="doc_type_mapping" Type="Self.doc_type_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="key_type_mapset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doc_type_mapping">
+        <PropertyRef Name="key_type_mapset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id">
+    <End Role="onbase_doc_type" Type="Self.onbase_doc_type" Multiplicity="0..1" />
+    <End Role="doc_type_mapping" Type="Self.doc_type_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_doc_type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="doc_type_mapping">
+        <PropertyRef Name="ob_doc_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_document_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="0..1" />
+    <End Role="document" Type="Self.document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="document">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_metadata_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="metadata" Type="Self.metadata" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="metadata">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_note_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="0..1" />
+    <End Role="note" Type="Self.note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="note">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_document_document_doc_id">
+    <End Role="document" Type="Self.document" Multiplicity="1" />
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_document">
+        <PropertyRef Name="doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_file_type_file_type_id">
+    <End Role="file_type" Type="Self.file_type" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="file_type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="file_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_file_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="0..1" />
+    <End Role="file" Type="Self.file" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="file">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_legacy_file_info_file_file_id">
+    <End Role="file" Type="Self.file" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="legacy_file_info" Type="Self.legacy_file_info" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="file">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="legacy_file_info">
+        <PropertyRef Name="file_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_file_info_file_file_id">
+    <End Role="file" Type="Self.file" Multiplicity="1" />
+    <End Role="onbase_file_info" Type="Self.onbase_file_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="file">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_file_info">
+        <PropertyRef Name="file_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_metadata_snapshot_snapshot_id">
+    <End Role="snapshot" Type="Self.snapshot" Multiplicity="1" />
+    <End Role="metadata" Type="Self.metadata" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="snapshot">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="metadata">
+        <PropertyRef Name="snapshot_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_file_info_onbase_document_onbase_doc_id">
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="onbase_file_info" Type="Self.onbase_file_info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_file_info">
+        <PropertyRef Name="onbase_doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_onbase_note_onbase_document_onbase_doc_id">
+    <End Role="onbase_document" Type="Self.onbase_document" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="onbase_note" Type="Self.onbase_note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="onbase_document">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="onbase_note">
+        <PropertyRef Name="onbase_doc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CcsServerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="datasets" EntityType="Self.dataset" />
+    <EntitySet Name="dataset_field" EntityType="Self.dataset_field" />
+    <EntitySet Name="dataset_mapset" EntityType="Self.dataset_mapset" />
+    <EntitySet Name="dataset_record" EntityType="Self.dataset_record" />
+    <EntitySet Name="dip_batch" EntityType="Self.dip_batch" />
+    <EntitySet Name="diskgroups" EntityType="Self.diskgroup" />
+    <EntitySet Name="doc_type_mapping" EntityType="Self.doc_type_mapping" />
+    <EntitySet Name="documents" EntityType="Self.document" />
+    <EntitySet Name="fields" EntityType="Self.field" />
+    <EntitySet Name="files" EntityType="Self.file" />
+    <EntitySet Name="file_type" EntityType="Self.file_type" />
+    <EntitySet Name="key_type_mapset" EntityType="Self.key_type_mapset" />
+    <EntitySet Name="legacy_file_info" EntityType="Self.legacy_file_info" />
+    <EntitySet Name="max_num_keys" EntityType="Self.max_num_keys" />
+    <EntitySet Name="metadatas" EntityType="Self.metadata" />
+    <EntitySet Name="notes" EntityType="Self.note" />
+    <EntitySet Name="onbase_doc_type" EntityType="Self.onbase_doc_type" />
+    <EntitySet Name="onbase_document" EntityType="Self.onbase_document" />
+    <EntitySet Name="onbase_file_info" EntityType="Self.onbase_file_info" />
+    <EntitySet Name="onbase_key_type" EntityType="Self.onbase_key_type" />
+    <EntitySet Name="onbase_note" EntityType="Self.onbase_note" />
+    <EntitySet Name="snapshots" EntityType="Self.snapshot" />
+    <AssociationSet Name="FK_dataset_field_dataset_dataset_id" Association="Self.FK_dataset_field_dataset_dataset_id">
+      <End Role="dataset" EntitySet="datasets" />
+      <End Role="dataset_field" EntitySet="dataset_field" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_mapset_dataset_dataset_id" Association="Self.FK_dataset_mapset_dataset_dataset_id">
+      <End Role="dataset" EntitySet="datasets" />
+      <End Role="dataset_mapset" EntitySet="dataset_mapset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_record_dataset_dataset_id" Association="Self.FK_dataset_record_dataset_dataset_id">
+      <End Role="dataset" EntitySet="datasets" />
+      <End Role="dataset_record" EntitySet="dataset_record" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_mapset_key_type_mapset_key_type_mapset_id" Association="Self.FK_dataset_mapset_key_type_mapset_key_type_mapset_id">
+      <End Role="key_type_mapset" EntitySet="key_type_mapset" />
+      <End Role="dataset_mapset" EntitySet="dataset_mapset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dataset_record_document_doc_id" Association="Self.FK_dataset_record_document_doc_id">
+      <End Role="document" EntitySet="documents" />
+      <End Role="dataset_record" EntitySet="dataset_record" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_dip_batch_dip_batch_id" Association="Self.FK_document_dip_batch_dip_batch_id">
+      <End Role="dip_batch" EntitySet="dip_batch" />
+      <End Role="document" EntitySet="documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doc_type_mapping_key_type_mapset_key_type_mapset_id" Association="Self.FK_doc_type_mapping_key_type_mapset_key_type_mapset_id">
+      <End Role="key_type_mapset" EntitySet="key_type_mapset" />
+      <End Role="doc_type_mapping" EntitySet="doc_type_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id" Association="Self.FK_doc_type_mapping_onbase_doc_type_ob_doc_type_id">
+      <End Role="onbase_doc_type" EntitySet="onbase_doc_type" />
+      <End Role="doc_type_mapping" EntitySet="doc_type_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_document_snapshot_snapshot_id" Association="Self.FK_document_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshots" />
+      <End Role="document" EntitySet="documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_document_doc_id" Association="Self.FK_file_document_doc_id">
+      <End Role="document" EntitySet="documents" />
+      <End Role="file" EntitySet="files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_metadata_document_doc_id" Association="Self.FK_metadata_document_doc_id">
+      <End Role="document" EntitySet="documents" />
+      <End Role="metadata" EntitySet="metadatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_note_document_doc_id" Association="Self.FK_note_document_doc_id">
+      <End Role="document" EntitySet="documents" />
+      <End Role="note" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_document_document_doc_id" Association="Self.FK_onbase_document_document_doc_id">
+      <End Role="document" EntitySet="documents" />
+      <End Role="onbase_document" EntitySet="onbase_document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_file_type_file_type_id" Association="Self.FK_file_file_type_file_type_id">
+      <End Role="file_type" EntitySet="file_type" />
+      <End Role="file" EntitySet="files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_file_snapshot_snapshot_id" Association="Self.FK_file_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshots" />
+      <End Role="file" EntitySet="files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_legacy_file_info_file_file_id" Association="Self.FK_legacy_file_info_file_file_id">
+      <End Role="file" EntitySet="files" />
+      <End Role="legacy_file_info" EntitySet="legacy_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_file_info_file_file_id" Association="Self.FK_onbase_file_info_file_file_id">
+      <End Role="file" EntitySet="files" />
+      <End Role="onbase_file_info" EntitySet="onbase_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_metadata_snapshot_snapshot_id" Association="Self.FK_metadata_snapshot_snapshot_id">
+      <End Role="snapshot" EntitySet="snapshots" />
+      <End Role="metadata" EntitySet="metadatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_file_info_onbase_document_onbase_doc_id" Association="Self.FK_onbase_file_info_onbase_document_onbase_doc_id">
+      <End Role="onbase_document" EntitySet="onbase_document" />
+      <End Role="onbase_file_info" EntitySet="onbase_file_info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_onbase_note_onbase_document_onbase_doc_id" Association="Self.FK_onbase_note_onbase_document_onbase_doc_id">
+      <End Role="onbase_document" EntitySet="onbase_document" />
+      <End Role="onbase_note" EntitySet="onbase_note" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
