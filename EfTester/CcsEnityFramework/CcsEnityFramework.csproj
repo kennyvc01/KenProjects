@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SbdNetAnn">
       <HintPath>..\..\..\..\CCS\CcsWorkstation\SbdNetAnn.dll</HintPath>
     </Reference>
@@ -109,6 +112,7 @@
     <Compile Include="legacy_file_info.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Mappings.cs" />
     <Compile Include="max_num_keys.cs">
       <DependentUpon>CcsModels.tt</DependentUpon>
     </Compile>

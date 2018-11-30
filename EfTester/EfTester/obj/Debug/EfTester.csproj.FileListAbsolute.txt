@@ -17,3 +17,27 @@ c:\users\kchurchill\documents\visual studio 2017\Projects\EfTester\EfTester\bin\
 c:\users\kchurchill\documents\visual studio 2017\Projects\EfTester\EfTester\bin\Debug\SbdNetAnn.dll
 c:\users\kchurchill\documents\visual studio 2017\Projects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.dll
 c:\users\kchurchill\documents\visual studio 2017\Projects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.Office.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EfTester.exe.config
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EfTester.exe
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EfTester.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\SbdNetAnn.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.Office.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.dll.config
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.xml
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.csprojAssemblyReference.cache
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.Form1.resources
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.Properties.Resources.resources
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.csproj.GenerateResource.cache
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.csproj.CoreCompileInputs.cache
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.csproj.CopyComplete
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.exe
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\obj\Debug\EfTester.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Newtonsoft.Json.xml

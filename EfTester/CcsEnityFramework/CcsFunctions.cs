@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
+using Newtonsoft.Json.Linq;
 
 namespace CcsEnityFramework
 {
@@ -46,33 +47,43 @@ namespace CcsEnityFramework
                 return bytes;
             }
         }
-        public static void createDipFile(CcsServerEntities ctx)
+        public static void createDipFile(CcsServerEntities ctx, JArray mappingIndex)
         {
-            foreach(document doc in ctx.documents)
+            //Loop through Doc Type Mapping and add to a list of the mappings object
+            List < Mappings > dtmList = new List<Mappings>();
+            foreach(doc_type_mapping dMap in ctx.doc_type_mapping)
             {
-                var dtm = findMapping(doc);
+                dtmList.Add(new Mappings { onbaseDocType = dMap.onbase_doc_type.name, lookUp0 = dMap.lookup_000, lookUp1 = dMap.lookup_001, lookUp2 = dMap.lookup_002, lookUp3 = dMap.lookup_003, lookUp4 = dMap.lookup_004 });
             }
+            
         }
-        private static doc_type_mapping findMapping(document doc)
+        private static doc_type_mapping findMapping(document doc, JArray mappingIndex)
         {
+            var mappingCol = "col_" + mappingIndex[0].ToString().PadLeft(3, '0');
+            var mappingValue = doc.metadata.GetType().GetProperty(mappingCol).GetValue(doc.metadata, null);
+
             CcsServerEntities ctx = new CcsServerEntities();
             var dtm = ctx.doc_type_mapping
-                .Where(d => d.lookup_000 == doc.metadata.col_005)
+                .Where(d => d.lookup_000 == mappingValue.ToString())
                 .FirstOrDefault();
 
             //loop through keytype mapset and pull out the non null values
             foreach (var prop in dtm.key_type_mapset.GetType().GetProperties())
             {
                 var property = prop.Name;
-                var value =  prop.GetValue(dtm.key_type_mapset, null).ToString() ;
+                var value =  prop.GetValue(dtm.key_type_mapset, null);
 
-                var onbaseKeyType = ctx.onbase_key_type
-                    .Where(o => o.id == int.Parse(value))
-                    .FirstOrDefault();
-
-                if(value != null)
+                if(value != null && property.ToString().Length > 3 && property.ToString().Substring(0,4) == "col_")
                 {
-                   // Debug.WriteLine("{0} = {1}", prop.Name, onbaseKeyType.name);
+                    
+                    var keytypeId = value.ToString();
+                    //Look for the OnBase keyword name
+                    
+                    var onbaseKeyType = ctx.onbase_key_type
+                        .Where(o => o.id.ToString() == keytypeId)
+                        .FirstOrDefault();
+                    
+                    //Debug.WriteLine("{0} = {1}", prop.Name, onbaseKeyType.name);
                 }
                     
             }

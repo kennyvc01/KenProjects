@@ -22,7 +22,7 @@ namespace EfTester
         private void button1_Click(object sender, EventArgs e)
         {
             CcsEfDll.processSnapshot(int.Parse(txtSnapshotId.Text));
-            
+            //CcsEfDll.getMappingIndex();
         }
     }
 }

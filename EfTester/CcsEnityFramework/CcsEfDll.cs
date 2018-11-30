@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace CcsEnityFramework
 {
@@ -18,6 +20,16 @@ namespace CcsEnityFramework
                 .FirstOrDefault();
 
             return sId.id;
+        }
+        public static JArray getMappingIndex()
+        {
+
+            //grab mapping column from dip.json
+            JObject o1 = JObject.Parse(File.ReadAllText(@"C:\Users\kenny\Documents\Developer\ccs-2.3.305\CcsServer\cfg\projects\1\mappings.json"));
+
+            JArray mappingIndex = (JArray)o1["LookupAssignments"];
+
+            return mappingIndex;
         }
 
         public static void processSnapshot(int snapshotId)
@@ -52,7 +64,11 @@ namespace CcsEnityFramework
             Debug.WriteLine("Pipleine has completed");
 
             Debug.WriteLine("Creating DIP for for snapshot id: " + snapshotId);
-            CcsFunctions.createDipFile(ctx);
+
+            var mappingIndex = getMappingIndex();
+            CcsFunctions.createDipFile(ctx, mappingIndex);
+
+            Debug.WriteLine("Done creating DIP file");
             //Check the results
             foreach (var doc in docs)
             {

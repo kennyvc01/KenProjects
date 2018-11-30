@@ -11,3 +11,20 @@ c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFrame
 c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\SbdNetAnn.dll
 c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.dll
 c:\Users\kchurchill\documents\visual studio 2017\Projects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.Office.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.dll.config
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\Snowbound.RasterMasterSharp.Office.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.xml
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.csprojAssemblyReference.cache
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.csproj.CoreCompileInputs.cache
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.csproj.CopyComplete
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\obj\Debug\CcsEnityFramework.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\Newtonsoft.Json.xml
