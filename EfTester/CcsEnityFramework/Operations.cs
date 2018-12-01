@@ -19,11 +19,11 @@ namespace CcsEnityFramework
             {
                 if(file.volume_id == 1)
                 {
-                    file.relative_path = "C:\\Users\\kchurchill\\Documents\\test.PNG";
+                   // file.relative_path = "C:\\Users\\kchurchill\\Documents\\test.PNG";
                 }
                 else
                 {
-                    file.relative_path = "C:\\Users\\kchurchill\\Documents\\test2.PNG";
+                   // file.relative_path = "C:\\Users\\kchurchill\\Documents\\test2.PNG";
                 }
                 
             }
