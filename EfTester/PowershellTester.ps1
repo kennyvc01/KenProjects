@@ -7,17 +7,7 @@
 Import-Module "C:\Users\kenny\Documents\Developer\KenProjects\EfTester\CcsEnityFramework\bin\Debug\CcsEnityFramework.dll"
 
 $snapshotsToProcess = @(
-1000,
-1001,
-1002,
-1005,
-1006,
-1007,
-1008,
-1010,
-1011,
-1012,
-1013
+1010
 )
 
 $start = Get-Date

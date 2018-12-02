@@ -19,11 +19,11 @@ namespace CcsEnityFramework
             {
                 if(file.volume_id == 1)
                 {
-                   // file.relative_path = "C:\\Users\\kchurchill\\Documents\\test.PNG";
+                    file.relative_path = "C:\\Users\\kchurchill\\Documents\\test.PNG";
                 }
                 else
                 {
-                   // file.relative_path = "C:\\Users\\kchurchill\\Documents\\test2.PNG";
+                    file.relative_path = "C:\\Users\\kchurchill\\Documents\\test2.PNG";
                 }
                 
             }
@@ -34,8 +34,10 @@ namespace CcsEnityFramework
             foreach (var file in doc.files)
             {
                 var bytes = CcsFunctions.readFile(file, fbList, doc);
+                
                 if(doc.exception_code == null)
                 {
+                    
                     var sbFileType = snow.CIMGLOW_get_filetype_mem(bytes);
 
                     CcsServerEntities ctx = new CcsServerEntities();
@@ -45,8 +47,10 @@ namespace CcsEnityFramework
 
                     file.file_type_id = fileType.id;
                     file.sb_file_type = fileType.sb_file_type;
+                    
 
                 }
+                
             }
         }
     }

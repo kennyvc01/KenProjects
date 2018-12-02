@@ -108,12 +108,22 @@ namespace CcsEnityFramework
 
                     foreach (var file in doc.files.OrderBy(f => f.seq))
                     {
-                        dipFileList.Add(">>FileTypeNum: " + file.file_type.hsi_filetypenum);
-                        dipFileList.Add(">>FullPath: " + file.relative_path);
+                        var fileType = file.file_type;
+                        if(fileType !=null && fileType.hsi_filetypenum.ToString() != null)
+                        {
+                            dipFileList.Add(">>FileTypeNum: " + file.file_type.hsi_filetypenum);
+                            dipFileList.Add(">>FullPath: " + file.relative_path);
+                        }
+                        else
+                        {
+                            doc.exception_code = 34;
+                        }
+
                     }
                 }
             }
-            TextWriter tw = new StreamWriter(@"C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\dip_01.txt");
+            
+            TextWriter tw = new StreamWriter(@".\dip_01.txt");
             foreach(string s in dipFileList)
             {
                 tw.WriteLine(s);

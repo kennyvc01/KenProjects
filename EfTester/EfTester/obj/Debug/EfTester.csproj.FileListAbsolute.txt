@@ -23,9 +23,6 @@ C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EfTes
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.dll
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.dll
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\SbdNetAnn.dll
-C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.dll
-C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.Office.dll
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.pdb
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\CcsEnityFramework.dll.config
 C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\EntityFramework.xml
@@ -63,3 +60,6 @@ C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\EfTester\obj\Debug\EfTest
 C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\EfTester\obj\Debug\EfTester.csproj.GenerateResource.Cache
 C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\EfTester\obj\Debug\EfTester.exe
 C:\Users\kchurchill\Documents\Dev\KenProjects\EfTester\EfTester\obj\Debug\EfTester.pdb
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\SbdNetAnn.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.dll
+C:\Users\kenny\Documents\Developer\KenProjects\EfTester\EfTester\bin\Debug\Snowbound.RasterMasterSharp.Office.dll

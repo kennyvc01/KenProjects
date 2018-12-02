@@ -11,16 +11,6 @@ namespace CcsEnityFramework
 {
     public class CcsEfDll
     {
-        public static int getSnapshotId(int snapshotId)
-        {
-            CcsServerEntities ctx = new CcsServerEntities();
-
-            var sId = ctx.snapshots
-                .Where(s => s.id == snapshotId)
-                .FirstOrDefault();
-
-            return sId.id;
-        }
         public static JObject getMappingIndex()
         {
 
@@ -29,7 +19,6 @@ namespace CcsEnityFramework
 
             return o1;
         }
-
         public static void processSnapshot(int snapshotId)
         {
             CcsServerEntities ctx = new CcsServerEntities();
@@ -37,10 +26,12 @@ namespace CcsEnityFramework
             //Grab docs from context
             var docs = ctx.documents
                 .Where(d => d.snapshot_id == snapshotId);
-
+            
             //Pipeline
             Debug.WriteLine("Beginning Pipeline for snapshot id " + snapshotId);
             Console.WriteLine("Beginning Pipeline for snapshot id " + snapshotId);
+            
+            var count = 1;
             foreach (var doc in docs)
             {
                 //Initialize byte array list
@@ -52,21 +43,29 @@ namespace CcsEnityFramework
                 }
                 if (doc.exception_code == null && doc.exclusion_code == null)
                 {
-                    Operations.updateFilePath(doc);
+                    //Operations.updateFilePath(doc);
                 }
                 if (doc.exception_code == null && doc.exclusion_code == null)
                 {
                     Operations.getSbFileType(doc,fbList);
                 }
 
+                count++;
+                if(count % 1000 == 0)
+                {
+                    Console.WriteLine(count + " Docs processed for snapshot id " + snapshotId);
+                    Debug.WriteLine(count + " Docs processed for snapshot id " + snapshotId);
+                }
+
             }
+            
             Console.WriteLine("Pipleine has completed for snapshot id " + snapshotId);
             Debug.WriteLine("Pipleine has completed for snapshot id " + snapshotId);
 
             Debug.WriteLine("Creating DIP for for snapshot id: " + snapshotId);
 
             var mappingIndex = getMappingIndex();
-            //CcsFunctions.createDipFile(ctx, mappingIndex, snapshotId);
+            CcsFunctions.createDipFile(ctx, mappingIndex, snapshotId);
 
             Debug.WriteLine("Done creating DIP file");
 

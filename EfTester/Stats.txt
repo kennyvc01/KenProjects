@@ -1,0 +1,16 @@
+--Testing sample: 50k (same docset)
+
+--Ccs Normal File Type (SB and Ccs)
+22 minutes 25 seconds
+23 minutes 19 seconds
+
+--Not using local db (CCS Entity Framework only)
+6 minutes 15 seconds
+5 minutes 15 seconds
+5 minutes 28 seconds
+6 minutes 10 seconds
+5 minutes 59 seconds
+
+--Ccs Custom File Type using System.IO.File::ReadAllBytes
+5 minutes 11 seconds
+3 minutes 38 seconds
