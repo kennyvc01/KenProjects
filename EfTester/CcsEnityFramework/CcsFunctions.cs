@@ -123,7 +123,7 @@ namespace CcsEnityFramework
                 }
             }
             
-            TextWriter tw = new StreamWriter(@".\dip_01.txt");
+            TextWriter tw = new StreamWriter(@"C:\users\kenny\documents\dip_01.txt");
             foreach(string s in dipFileList)
             {
                 tw.WriteLine(s);

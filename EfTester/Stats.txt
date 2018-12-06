@@ -14,3 +14,4 @@
 --Ccs Custom File Type using System.IO.File::ReadAllBytes
 5 minutes 11 seconds
 3 minutes 38 seconds
+5 minutes 17 seconds
